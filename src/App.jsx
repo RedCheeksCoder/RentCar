@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 import HomePage from "./HomePage";
 import About from "./About";
-import Models from "./Models";
-import Banner from "./Banner";
+import Steps from "./Steps";
 import Contact from "./WhyChoose";
 import Footer from "./Footer";
 import AppDownload from "./AppDownload";
 import Testimonies from "./Testimonies";
 import Information from "./Information";
+import Team from "./Team";
+import Models from "./Models";
 
 const StyledApp = styled.div`
   display: flex;
@@ -49,7 +50,7 @@ function App() {
           <About />
         </section>
         <section id="models">
-          <Models />
+          <Steps />
         </section>
         <section id="testimonials">
           <Testimonies />
@@ -61,6 +62,8 @@ function App() {
           <Contact />
         </section>
         <Information />
+        <Team />
+        <Models />
         <Footer />{" "}
       </AppContainer>
     </StyledApp>

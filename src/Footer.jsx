@@ -11,12 +11,9 @@ import Banner from "./Banner";
 const StyledFooter = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
-
-  max-width: 70vw; /* limit the width to 70% of the viewport width */
-  margin-left: auto; /* center the footer horizontally */
-  margin-right: auto;
-  overflow: visible; /* allow the content to overflow the container */
+  margin: 5rem auto;
+  max-width: 70vw;
+  overflow: visible;
 `;
 
 const Container = styled.div`
@@ -68,20 +65,9 @@ const SubscribeButton = styled.div`
   text-align: center;
 `;
 
-/* const FooterContainer = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
-  text-align: center;
-  background-color: grey;
-`; */
-
 function Footer() {
   return (
     <>
-      <Banner />
       <StyledFooter>
         <Container>
           <h1>Rent Car Co.</h1>
