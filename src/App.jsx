@@ -10,6 +10,7 @@ import Testimonies from "./Testimonies";
 import Information from "./Information";
 import Team from "./Team";
 import Models from "./Models";
+import PickCar from "./PickCar";
 
 const StyledApp = styled.div`
   display: flex;
@@ -63,6 +64,7 @@ function App() {
         </section>
         <Information />
         <Team />
+        <PickCar />
         <Models />
         <Footer />{" "}
       </AppContainer>
