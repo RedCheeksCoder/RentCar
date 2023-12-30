@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdLocationOn } from "react-icons/md";
 import { FaCarSide, FaRegCalendarAlt } from "react-icons/fa";
 import ButtonDesign from "./ButtonDesign";
-import Calendar from "react-calendar";
+
 const StyledBookForm = styled.div`
   display: flex;
   align-items: start;

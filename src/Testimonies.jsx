@@ -24,7 +24,7 @@ const Heading = styled.div`
   p {
     color: #818080ae;
     width: 50%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -39,7 +39,7 @@ const Testimony = styled.div`
   column-gap: 3rem;
   padding: 0 2rem;
   p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 `;
 function Testimonies() {
@@ -66,7 +66,7 @@ function Testimonies() {
               <imRoundImageg src="/memma-stone.webp" alt="" />
               MEMMA STONE
               <div>
-                <img src="/quote.svg" alt="" />
+                <img src="/svg/quote.svg" alt="" />
               </div>
             </h3>
           </div>
@@ -82,7 +82,7 @@ function Testimonies() {
               <RoundImage src="/pettah-porker.avif" alt="" />
               PETTAH PORKER
               <div>
-                <img src="/quote.svg" alt="" />
+                <img src="/svg/quote.svg" alt="" />
               </div>
             </h3>
           </div>

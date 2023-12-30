@@ -51,7 +51,7 @@ function Steps() {
         <div>
           <Stepss>
             <StepsImageContainer>
-              <img src="/car.svg" alt="" />
+              <img src="/svg/car.svg" alt="" />
             </StepsImageContainer>
             <h3>Car Selection</h3>
             <p>
@@ -63,7 +63,7 @@ function Steps() {
         <div>
           <Stepss>
             <StepsImageContainer>
-              <img src="/file-description.svg" alt="" />
+              <img src="/svg/file-description.svg" alt="" />
             </StepsImageContainer>
             <h3>Fill details</h3>
             <p>
@@ -75,7 +75,7 @@ function Steps() {
         <div>
           <Stepss>
             <StepsImageContainer>
-              <img src="/steering-wheel.svg" alt="" />
+              <img src="/svg/steering-wheel.svg" alt="" />
             </StepsImageContainer>
             <h3>Drive Car</h3>
             <p>

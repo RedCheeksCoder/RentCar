@@ -1,5 +1,3 @@
-import styled, { ThemeProvider } from "styled-components";
-
 import HomePage from "./HomePage";
 import About from "./About";
 import Steps from "./Steps";
@@ -18,6 +16,7 @@ import BookForm from "./BookForm";
 
 import { ModalProvider } from "styled-react-modal";
 import FancyModalButton, { FadingBackground } from "./Modal";
+import styled from "styled-components";
 
 const StyledApp = styled.div`
   display: flex;
@@ -77,7 +76,7 @@ function App() {
           <Models />
           <Display />
           <FAQ />
-          <FancyModalButton />
+          <FancyModalButton>I AM A NEW MODAL</FancyModalButton>
           <BookForm />
           <Footer />{" "}
         </AppContainer>

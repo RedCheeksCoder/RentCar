@@ -145,7 +145,7 @@ const Details = styled.div`
     height: 100%; /* Set height to 100% of the container */
     text-align: center;
     border-radius: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 

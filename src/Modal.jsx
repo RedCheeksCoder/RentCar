@@ -12,7 +12,7 @@ const StyledModal = Modal.styled`
   opacity: ${(props) => props.opacity};
   transition : all 0.3s ease-in-out;`;
 
-function FancyModalButton() {
+function FancyModalButton({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const [opacity, setOpacity] = useState(0);
 
@@ -45,7 +45,7 @@ function FancyModalButton() {
         onEscapeKeydown={toggleModal}
         opacity={opacity}
         backgroundProps={{ opacity }}>
-        <span>I am a modal!</span>
+        <span>{children}</span>
         <button onClick={toggleModal}>Close me</button>
       </StyledModal>
     </div>
