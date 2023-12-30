@@ -16,15 +16,15 @@ const ImageContainer = styled.div`
     width: 100%;
     height: auto;
     display: block;
-    padding: 2rem;
   }
 `;
 
 const Details = styled.div`
   padding: 2rem;
+  width: 200rem;
   p {
     margin: 1rem 0;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     line-height: 1.67;
   }
   h1 {

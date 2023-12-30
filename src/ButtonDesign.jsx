@@ -8,7 +8,7 @@ const BookRide = styled.a`
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 17px;
+  font-size: 1.6rem;
   font-weight: bold;
   padding: 12px 15px;
   text-decoration: none;

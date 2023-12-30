@@ -11,6 +11,9 @@ import Information from "./Information";
 import Team from "./Team";
 import Models from "./Models";
 import PickCar from "./PickCar";
+import Display from "./Display";
+import ScrollToTopButton from "./BackToTop";
+import FAQ from "./FAQ";
 
 const StyledApp = styled.div`
   display: flex;
@@ -46,6 +49,7 @@ function App() {
       <AppContainer>
         <section id="home">
           <HomePage />
+          <ScrollToTopButton />
         </section>
         <section id="about">
           <About />
@@ -66,6 +70,8 @@ function App() {
         <Team />
         <PickCar />
         <Models />
+        <Display />
+        <FAQ />
         <Footer />{" "}
       </AppContainer>
     </StyledApp>

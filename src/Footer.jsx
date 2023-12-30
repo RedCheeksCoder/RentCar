@@ -1,12 +1,4 @@
 import styled from "styled-components";
-import Banner from "./Banner";
-
-/* const StyledFooter = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5rem;
-  margin-top: 3rem;
-`; */
 
 const StyledFooter = styled.div`
   display: flex;
@@ -14,6 +6,7 @@ const StyledFooter = styled.div`
   margin: 5rem auto;
   max-width: 70vw;
   overflow: visible;
+  margin-bottom: 5rem;
 `;
 
 const Container = styled.div`
@@ -21,11 +14,32 @@ const Container = styled.div`
   margin-top: 0;
   padding-top: 0;
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
+  }
+  p {
+    color: #818080ae;
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      color: #ff7231;
+      transition: all 0.23s ease-in-out;
+    }
+  }
+
+  h2 {
+    &:hover {
+      color: #ff7231;
+      transition: all 0.23s ease-in-out;
+    }
   }
 
   ul {
@@ -37,12 +51,14 @@ const Container = styled.div`
     border-color: transparent;
     border-width: 1px;
     font-family: Rubik, sans-serif;
-    font-size: 14px;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 26px;
     margin-top: 1rem;
     outline: none;
     padding: 10px 48px;
+    width: 70%;
+    text-align: center;
   }
 `;
 
@@ -53,7 +69,7 @@ const SubscribeButton = styled.div`
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
   color: #fff;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5rem 0.75rem;
   text-decoration: none;
@@ -63,6 +79,10 @@ const SubscribeButton = styled.div`
   width: fit-content;
   width: 90%;
   text-align: center;
+  &:hover {
+    background-color: #ff7231;
+    transition: all 0.23s ease-in-out;
+  }
 `;
 
 function Footer() {
@@ -84,7 +104,7 @@ function Footer() {
           <ul>
             <li>Makati</li>
             <li>Taguig</li>
-            <li>Quezonb City</li>
+            <li>Quezon City</li>
             <li>Mandaluyong</li>
             <li>Pasay</li>
           </ul>

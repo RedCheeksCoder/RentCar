@@ -14,14 +14,14 @@ const StyledInformation = styled.div`
     box-sizing: border-box;
     padding: 0 2rem;
     label {
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: 600;
       margin-bottom: 1rem;
     }
     input {
       background-color: #f2f2f2;
       border: none;
-      font-size: 1rem;
+      font-size: 1.5rem;
       outline: none;
       padding: 19px 30px;
       margin-bottom: 1rem;
@@ -31,7 +31,7 @@ const StyledInformation = styled.div`
       margin-bottom: 2.5rem;
       background-color: #f2f2f2;
       border: none;
-      font-size: 1rem;
+      font-size: 1.5rem;
       outline: none;
       padding: 19px 30px;
     }
@@ -39,9 +39,17 @@ const StyledInformation = styled.div`
 `;
 
 const Details = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0 2rem;
   width: 70%;
+  p {
+    color: #818080ae;
+    font-size: 1.2rem;
+  }
+  h4,
+  h1 {
+    margin: 0.3rem;
+  }
 `;
 function Information() {
   return (
@@ -52,8 +60,8 @@ function Information() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eos aut
           quis. Dolor, hic sint.
         </p>
-        <p>(02) 882-0925</p>
-        <p>rentcar@org.co</p>
+        <h4>(02) 882-0925</h4>
+        <h4>rentcar@org.co</h4>
       </Details>
       <form>
         <label>

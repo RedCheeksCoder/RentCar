@@ -12,7 +12,7 @@ const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    height: 15rem;
+    height: 18rem;
     display: block;
   }
 `;
@@ -21,12 +21,13 @@ const Heading = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  font-size: 1.3rem;
 `;
 const Details = styled.p`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   padding: 0 1rem;
 `;

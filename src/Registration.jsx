@@ -8,7 +8,7 @@ const StyledRegistration = styled.div`
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 17px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 12px 20px;
   text-decoration: none;

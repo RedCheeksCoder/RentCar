@@ -26,15 +26,17 @@ const Stepss = styled.div`
   flex-direction: column;
   align-items: center;
   img {
-    height: 5rem;
+    height: 7rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 2.1rem;
   }
   p {
     margin: 0 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    color: #808080c8;
   }
 `;
 

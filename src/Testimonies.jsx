@@ -14,15 +14,17 @@ const Heading = styled.div`
   align-items: center;
   padding: 0 4rem;
   h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin: 0;
   }
   h4 {
-    color: #ff0000;
+    font-size: 1.5rem;
+    color: #ff7231;
   }
   p {
     color: #818080ae;
     width: 50%;
+    font-size: 1.2rem;
   }
 `;
 

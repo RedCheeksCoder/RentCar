@@ -1,5 +1,69 @@
 import styled from "styled-components";
 import ButtonDesign from "./ButtonDesign";
+import { useState } from "react";
+
+const pickCars = [
+  {
+    id: 0,
+    carName: "Everest",
+    ratePerDay: 75,
+    brand: "Ford",
+    transmissionType: "Automatic",
+    seatingCapacity: 7,
+    gasolineType: "Diesel",
+    image: "/bg-removed/0.png",
+  },
+  {
+    id: 1,
+    carName: "BRV",
+    ratePerDay: 60,
+    brand: "Honda",
+    transmissionType: "Automatic",
+    seatingCapacity: 7,
+    gasolineType: "Petrol",
+    image: "/bg-removed/1.png",
+  },
+  {
+    id: 2,
+    carName: "mu-X",
+    ratePerDay: 80,
+    brand: "Isuzu",
+    transmissionType: "Automatic",
+    seatingCapacity: 7,
+    gasolineType: "Diesel",
+    image: "/bg-removed/2.png",
+  },
+  {
+    id: 3,
+    carName: "Montero",
+    ratePerDay: 85,
+    brand: "Mitsubishi",
+    transmissionType: "Automatic",
+    seatingCapacity: 7,
+    gasolineType: "Diesel",
+    image: "/bg-removed/3.png",
+  },
+  {
+    id: 4,
+    carName: "Ertiga",
+    ratePerDay: 55,
+    brand: "Suzuki",
+    transmissionType: "Automatic",
+    seatingCapacity: 7,
+    gasolineType: "Petrol",
+    image: "/bg-removed/4.png",
+  },
+  {
+    id: 5,
+    carName: "Innova",
+    ratePerDay: 65,
+    brand: "Toyota",
+    transmissionType: "Automatic",
+    seatingCapacity: 7,
+    gasolineType: "Petrol",
+    image: "/bg-removed/5.png",
+  },
+];
 
 const StyledPickCar = styled.div`
   display: flex;
@@ -21,11 +85,15 @@ const PickTitle = styled.div`
     padding: 0;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   p {
     max-width: 50%;
     color: #808080c8;
+  }
+  h3 {
+    color: #ff7231;
+    font-size: 1.5rem;
   }
 `;
 
@@ -37,7 +105,7 @@ const PickInformation = styled.div`
 `;
 
 const Choices = styled.div`
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   padding: 0.5rem;
   li {
@@ -60,7 +128,7 @@ const CarImage = styled.div`
 
   img {
     width: 100%;
-    height: 15rem;
+    height: 25rem;
     display: block;
   }
 `;
@@ -77,15 +145,15 @@ const Details = styled.div`
     height: 100%; /* Set height to 100% of the container */
     text-align: center;
     border-radius: 0;
+    font-size: 2.5rem;
   }
 `;
 
 const Price = styled.div`
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 2.5rem;
   background-color: #ff7231;
   color: white;
-  padding: 0.5rem;
+  padding: 0.8rem;
   width: 100%;
 `;
 
@@ -101,14 +169,16 @@ const Table = styled.div`
 const TableData = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: 100%;
   margin: 0.5rem 0;
+  padding: 0 0.5rem;
   column-gap: 2rem;
   border: 2px solid #706f7b;
 `;
 
 function PickCar() {
+  const [carId, setCarId] = useState(0);
   return (
     <StyledPickCar>
       <PickTitle>
@@ -122,44 +192,45 @@ function PickCar() {
       <PickInformation>
         <Choices>
           <ul>
-            <li>Ford Everest</li>
-            <li>Honda BRV</li>
-            <li>Isuzu mu-X</li>
-            <li>Montero Sport</li>
-            <li>Suzuki Ertiga</li>
-            <li>Toyota Innova</li>
+            <li onClick={() => setCarId(0)}>Ford Everest</li>
+            <li onClick={() => setCarId(1)}>Honda BRV</li>
+            <li onClick={() => setCarId(2)}>Isuzu mu-X</li>
+            <li onClick={() => setCarId(3)}>Montero Sport</li>
+            <li onClick={() => setCarId(4)}>Suzuki Ertiga</li>
+            <li onClick={() => setCarId(5)}>Toyota Innova</li>
           </ul>
         </Choices>
         <CarImage>
-          <img src="/car-models/Ford-Everest.jpg" alt="" />
+          <img src={pickCars[carId].image} alt="" />
         </CarImage>
         <Details>
           <Price>
             <span>
-              <stong>50$</stong>
+              <strong>{`${pickCars[carId].ratePerDay}$`}</strong>
             </span>{" "}
             /rate per day
           </Price>
           <Table>
             <TableData>
-              <div>Model</div>
-              <div>Everest</div>
+              <div>Brand</div>
+              <div>{pickCars[carId].brand}</div>
             </TableData>
             <TableData>
-              <div>Brand</div>
-              <div>Ford</div>
+              <div>Model</div>
+              <div>{pickCars[carId].carName}</div>
             </TableData>
+
             <TableData>
               <div>Capacity</div>
-              <div>7</div>
+              <div>{pickCars[carId].seatingCapacity}</div>
             </TableData>
             <TableData>
               <div>Transmission</div>
-              <div>Manual</div>
+              <div>{pickCars[carId].transmissionType}</div>
             </TableData>
             <TableData>
               <div>Fuel</div>
-              <div>Diesel</div>
+              <div>{pickCars[carId].gasolineType}</div>
             </TableData>
           </Table>
           <ButtonDesign>RESERVE NOW</ButtonDesign>

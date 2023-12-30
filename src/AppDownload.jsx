@@ -6,12 +6,16 @@ const StyledAppDownload = styled.div`
 
   img {
     cursor: pointer;
-    height: 5rem;
+    height: 6rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 2rem 0 0 0;
     line-height: 1.2;
+  }
+  p {
+    color: #818080ae;
+    font-size: 1.2rem;
   }
 `;
 
@@ -27,7 +31,7 @@ const PhoneContainer = styled.div`
   align-items: center;
   margin-left: 8rem;
   img {
-    height: 25rem;
+    height: 30rem;
   }
 `;
 function AppDownload() {

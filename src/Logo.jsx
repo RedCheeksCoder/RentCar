@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledLogo = styled.div`
   img {
-    height: 100px;
+    height: 8rem;
     width: auto;
   }
 `;
