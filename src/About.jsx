@@ -12,7 +12,7 @@ const StyledAbout = styled.div`
 
 const Image = styled.div`
   img {
-    height: 30rem;
+    height: 25rem;
   }
 `;
 
@@ -22,22 +22,22 @@ const Details = styled.div`
   h1 {
     margin: 0;
     padding: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ff7231;
   }
   p {
     color: #808080c8;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.5rem 0;
   }
   li {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 

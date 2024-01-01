@@ -23,9 +23,10 @@ const Details = styled.div`
   padding: 2rem;
   width: 200rem;
   p {
+    color: #818080ae;
     margin: 1rem 0;
-    font-size: 1.5rem;
-    line-height: 1.67;
+    font-size: 1.2rem;
+    line-height: 1.7;
   }
   h1 {
     font-size: 3rem;

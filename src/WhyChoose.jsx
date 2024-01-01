@@ -16,23 +16,23 @@ const Hook = styled.div`
   padding: 0 1rem;
 
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.2;
     margin: 0;
   }
   p {
     color: #818080ae;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
 const Details = styled.div`
   width: 50%;
   padding: 0 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   p {
     color: #818080ae;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 `;
 
@@ -46,8 +46,8 @@ const DetailImage = styled.div`
   align-items: center;
 
   img {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     object-fit: cover;
   }
 `;

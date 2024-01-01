@@ -23,7 +23,7 @@ const StyledForm = styled.div`
   width: 100%;
   a {
     width: 28%;
-    height: 3rem;
+    height: 2rem;
     text-align: center;
     font-family: "Poppins", sans-serif;
     margin-top: 2rem;
@@ -36,7 +36,7 @@ const DetailsContainer = styled.div`
   flex-direction: column;
   font-size: 1.5rem;
   margin: 1rem 2rem 1rem 1rem;
-  width: 30%;
+  width: 25%;
   label {
     font-weight: 400;
     margin-bottom: 1rem;
@@ -49,8 +49,7 @@ const DetailsContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 400;
     outline: none;
-    padding: 0.5rem;
-    width: 100%;
+    width: 22rem;
   }
   b {
     color: #ff4d30;

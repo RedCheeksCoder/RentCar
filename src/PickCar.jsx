@@ -85,7 +85,7 @@ const PickTitle = styled.div`
     padding: 0;
   }
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   p {
     max-width: 50%;
@@ -93,7 +93,7 @@ const PickTitle = styled.div`
   }
   h3 {
     color: #ff7231;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
@@ -105,7 +105,7 @@ const PickInformation = styled.div`
 `;
 
 const Choices = styled.div`
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5rem;
   li {
@@ -128,7 +128,7 @@ const CarImage = styled.div`
 
   img {
     width: 100%;
-    height: 25rem;
+    height: 20rem;
     display: block;
   }
 `;
@@ -145,12 +145,12 @@ const Details = styled.div`
     height: 100%; /* Set height to 100% of the container */
     text-align: center;
     border-radius: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 
 const Price = styled.div`
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   background-color: #ff7231;
   color: white;
   padding: 0.8rem;
@@ -169,7 +169,7 @@ const Table = styled.div`
 const TableData = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 1.5rem;
+  font-size: 1rem;
   width: 100%;
   margin: 0.5rem 0;
   padding: 0 0.5rem;

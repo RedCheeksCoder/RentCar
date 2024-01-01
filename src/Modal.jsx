@@ -3,14 +3,18 @@ import styled from "styled-components";
 import Modal, { BaseModalBackground } from "styled-react-modal";
 
 const StyledModal = Modal.styled`
-  width: 20rem;
-  height: 20rem;
+margin-top: 5rem;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   opacity: ${(props) => props.opacity};
-  transition : all 0.3s ease-in-out;`;
+  transition : all 0.3s ease-in-out;
+ font-family: "Poppins";
+ padding: 0;
+
+  `;
 
 function FancyModalButton({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,11 +50,11 @@ function FancyModalButton({ children }) {
         opacity={opacity}
         backgroundProps={{ opacity }}>
         <span>{children}</span>
-        <button onClick={toggleModal}>Close me</button>
       </StyledModal>
     </div>
   );
 }
+/* <button onClick={toggleModal}>Close me</button> */
 
 export const FadingBackground = styled(BaseModalBackground)`
   opacity: ${(props) => props.opacity};

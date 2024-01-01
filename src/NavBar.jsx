@@ -9,7 +9,7 @@ const StyledNavBar = styled.ul`
 `;
 
 const List = styled.li`
-  font-size: 1.5rem;
+  font-size: 1rem;
   list-style: none;
   font-weight: 500;
   a {

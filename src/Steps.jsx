@@ -8,7 +8,7 @@ const StyledSteps = styled.div`
   justify-content: center;
   align-items: center;
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ff7231;
   }
 `;
@@ -26,15 +26,15 @@ const Stepss = styled.div`
   flex-direction: column;
   align-items: center;
   img {
-    height: 7rem;
+    height: 5rem;
   }
 
   h3 {
-    font-size: 2.1rem;
+    font-size: 1.5rem;
   }
   p {
     margin: 0 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     color: #808080c8;
   }

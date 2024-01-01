@@ -5,8 +5,7 @@ const StyledFooter = styled.div`
   justify-content: space-between;
   margin: 5rem auto;
   max-width: 70vw;
-  overflow: visible;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 `;
 
 const Container = styled.div`
@@ -14,18 +13,18 @@ const Container = styled.div`
   margin-top: 0;
   padding-top: 0;
   h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
   }
   p {
     color: #818080ae;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1rem 0;
     font-weight: 500;
     cursor: pointer;
@@ -57,8 +56,10 @@ const Container = styled.div`
     margin-top: 1rem;
     outline: none;
     padding: 10px 48px;
-    width: 70%;
+    width: 64%;
     text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0.2rem;
   }
 `;
 

@@ -16,14 +16,14 @@ const CarImage = styled.div`
   z-index: 10;
   img {
     height: auto;
-    width: 60rem;
+    width: 45rem;
   }
 `;
 
 const Heading = styled.h1`
   margin: 0;
   padding: 0;
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 1;
   text-wrap: balance;
 `;
@@ -31,7 +31,7 @@ const Heading = styled.h1`
 const Hook = styled.p`
   color: #808080c8;
   text-wrap: balance;
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
 
 const LearnMore = styled.a`
@@ -41,11 +41,10 @@ const LearnMore = styled.a`
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 12px 15px;
   text-decoration: none;
-  height: 2rem;
 `;
 
 const CTA = styled.div`

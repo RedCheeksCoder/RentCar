@@ -17,6 +17,7 @@ import BookForm from "./BookForm";
 import { ModalProvider } from "styled-react-modal";
 import FancyModalButton, { FadingBackground } from "./Modal";
 import styled from "styled-components";
+import Reservation from "./Reservation";
 
 const StyledApp = styled.div`
   display: flex;
@@ -40,48 +41,50 @@ const ImageContainer = styled.div`
 
 function App() {
   return (
-    <ModalProvider backgroundComponent={FadingBackground}>
-      <StyledApp>
-        <ImageContainer>
-          <img
-            src="../public/Presentation1.png"
-            alt=""
-            width={600}
-            height={600}
-          />
-        </ImageContainer>
-        <AppContainer>
-          <section id="home">
-            <HomePage />
-            <ScrollToTopButton />
-          </section>
-          <section id="about">
-            <About />
-          </section>
-          <section id="models">
-            <Steps />
-          </section>
-          <section id="testimonials">
-            <Testimonies />
-          </section>
-          <section id="team">
-            <AppDownload />
-          </section>
-          <section id="contact">
-            <Contact />
-          </section>
-          <Information />
-          <Team />
-          <PickCar />
-          <Models />
-          <Display />
-          <FAQ />
-          <FancyModalButton>I AM A NEW MODAL</FancyModalButton>
-          <BookForm />
-          <Footer />{" "}
-        </AppContainer>
-      </StyledApp>
-    </ModalProvider>
+    <StyledApp>
+      <ImageContainer>
+        <img
+          src="../public/Presentation1.png"
+          alt=""
+          width={600}
+          height={600}
+        />
+      </ImageContainer>
+      <AppContainer>
+        <section id="home">
+          <HomePage />
+          <ScrollToTopButton />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="models">
+          <Steps />
+        </section>
+        <section id="testimonials">
+          <Testimonies />
+        </section>
+        <section id="team">
+          <AppDownload />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Information />
+        <Team />
+        <PickCar />
+        <Models />
+        <Display />
+        <FAQ />
+        <ModalProvider backgroundComponent={FadingBackground}>
+          <FancyModalButton>
+            <Reservation />
+          </FancyModalButton>
+        </ModalProvider>
+        <BookForm />
+        <Footer />{" "}
+      </AppContainer>
+    </StyledApp>
   );
 }
 

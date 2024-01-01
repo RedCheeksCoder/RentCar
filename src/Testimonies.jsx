@@ -14,17 +14,17 @@ const Heading = styled.div`
   align-items: center;
   padding: 0 4rem;
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #ff7231;
   }
   p {
     color: #818080ae;
     width: 50%;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
@@ -39,7 +39,7 @@ const Testimony = styled.div`
   column-gap: 3rem;
   padding: 0 2rem;
   p {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 `;
 function Testimonies() {

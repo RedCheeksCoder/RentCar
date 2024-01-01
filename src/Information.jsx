@@ -14,14 +14,14 @@ const StyledInformation = styled.div`
     box-sizing: border-box;
     padding: 0 2rem;
     label {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 600;
       margin-bottom: 1rem;
     }
     input {
       background-color: #f2f2f2;
       border: none;
-      font-size: 1.5rem;
+      font-size: 1rem;
       outline: none;
       padding: 19px 30px;
       margin-bottom: 1rem;
@@ -31,7 +31,7 @@ const StyledInformation = styled.div`
       margin-bottom: 2.5rem;
       background-color: #f2f2f2;
       border: none;
-      font-size: 1.5rem;
+      font-size: 1rem;
       outline: none;
       padding: 19px 30px;
     }
