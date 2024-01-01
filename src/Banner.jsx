@@ -1,19 +1,17 @@
 import styled from "styled-components";
 
 const StyledBanner = styled.div`
-  height: 30dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60dvh;
 `;
 
 const BannerStyle = styled.div`
   background-color: #2c2c2c;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   opacity: 0.89;
   position: absolute;
-  left: 0;
   width: 100%;
-  margin: 0;
   height: 12rem;
   display: flex;
   justify-content: center;

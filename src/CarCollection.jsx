@@ -5,7 +5,7 @@ const ImageContainer = styled.div`
   overflow: hidden;
 
   img {
-    width: 60%;
+    width: 50%;
     height: auto;
     display: block;
   }

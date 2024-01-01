@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 const StyledSteps = styled.div`
-  height: 100dvh;
+  height: 80dvh;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h1 {
+  h3 {
     font-size: 2rem;
-    color: #ff7231;
+    color: #292828;
   }
 `;
 
@@ -40,13 +40,35 @@ const Stepss = styled.div`
   }
 `;
 
+const Header = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  h4 {
+    color: #ff7431;
+  }
+  h1 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-size: 2rem;
+  }
+  p {
+    color: #818080ae;
+    width: 50%;
+    font-size: 1rem;
+  }
+`;
 const StepsImageContainer = styled.div``;
 function Steps() {
   return (
     <StyledSteps>
-      <div>
+      <Header>
+        <h4>Plan your Trip with us</h4>
         <h1>Making a reservation made easy in 3 steps</h1>
-      </div>
+      </Header>
+
       <Details>
         <div>
           <Stepss>

@@ -16,7 +16,7 @@ const CarImage = styled.div`
   z-index: 10;
   img {
     height: auto;
-    width: 45rem;
+    width: 50rem;
   }
 `;
 
@@ -26,6 +26,10 @@ const Heading = styled.h1`
   font-size: 4rem;
   line-height: 1;
   text-wrap: balance;
+
+  b {
+    color: #ff4d30;
+  }
 `;
 
 const Hook = styled.p`
@@ -36,15 +40,21 @@ const Hook = styled.p`
 
 const LearnMore = styled.a`
   background-color: #000000;
-  border-radius: 7px;
+  border-radius: 3px;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
   font-size: 1rem;
   font-weight: bold;
-  padding: 12px 15px;
+  padding: 1rem;
   text-decoration: none;
+  &:hover {
+    color: black;
+    background-color: white;
+    outline: 2px solid black;
+    transition: all 0.2s;
+  }
 `;
 
 const CTA = styled.div`
@@ -52,13 +62,15 @@ const CTA = styled.div`
   justify-content: flex-start;
   align-items: center;
   column-gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
 `;
 function Headline() {
   return (
     <StyledHeadline>
       <div>
         <Heading>
-          Rent a car, <span>not a hassle.</span>
+          Rent a <b>car</b>, <span>not a hassle.</span>
         </Heading>
         <Hook>
           Drive your dream car today. The best cars at the best prices. Car

@@ -4,6 +4,7 @@ import ButtonDesign from "./ButtonDesign";
 const CarItemDesign = styled.div`
   height: auto;
   padding: 2rem;
+  border: 1px solid #d5d5d5;
 `;
 
 const ImageContainer = styled.div`

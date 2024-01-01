@@ -16,6 +16,7 @@ const Inputs = styled.div`
     padding: 1rem;
     width: 40%;
     border: none;
+    outline: none;
   }
   b {
     color: red;

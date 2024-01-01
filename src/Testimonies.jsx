@@ -38,6 +38,7 @@ const Testimony = styled.div`
   align-items: center;
   column-gap: 3rem;
   padding: 0 2rem;
+  margin: 2rem 0;
   p {
     font-size: 1.5rem;
   }

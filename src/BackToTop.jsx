@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const ToTopButton = styled.div`
-  background: #ff4d30;
+  background-color: #ff7231;
   position: fixed;
   bottom: 16px;
   right: 32px;

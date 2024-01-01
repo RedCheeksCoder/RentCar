@@ -1,16 +1,22 @@
 import styled from "styled-components";
 import { MdLocationOn } from "react-icons/md";
 import { FaCarSide, FaRegCalendarAlt } from "react-icons/fa";
-import ButtonDesign from "./ButtonDesign";
+import { ModalProvider } from "styled-react-modal";
+import FancyModalButton, { FadingBackground } from "./Modal";
+import Reservation from "./Reservation";
 
 const StyledBookForm = styled.div`
+  box-shadow: -5px 1px 54px 1px rgba(179, 169, 169, 0.3);
+  -webkit-box-shadow: -5px 1px 54px 1px rgba(179, 169, 169, 0.3);
+  -moz-box-shadow: -5px 1px 54px 1px rgba(179, 169, 169, 0.3);
   display: flex;
   align-items: start;
   flex-direction: column;
   max-width: 100%;
-  margin: 2rem 0;
-  h1 {
-    margin-left: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 9px;
+  h3 {
+    margin-left: 3rem;
   }
 `;
 
@@ -20,9 +26,10 @@ const StyledForm = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin: 0 2rem 2rem 2rem;
   width: 100%;
   a {
-    width: 28%;
+    width: 25%;
     height: 2rem;
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -34,11 +41,11 @@ const StyledForm = styled.div`
 const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 1rem 2rem 1rem 1rem;
   width: 25%;
   label {
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: 1rem;
   }
   select,
@@ -46,10 +53,11 @@ const DetailsContainer = styled.div`
     border: 1px solid #ccd7e6;
     border-radius: 3px;
     color: #ababab;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     outline: none;
-    width: 22rem;
+    width: 20rem;
+    padding: 1rem;
   }
   b {
     color: #ff4d30;
@@ -58,7 +66,7 @@ const DetailsContainer = styled.div`
 function BookForm() {
   return (
     <StyledBookForm>
-      <h1>Book your ride</h1>
+      <h3>Book your ride</h3>
       <StyledForm>
         <DetailsContainer>
           <label>
@@ -113,7 +121,11 @@ function BookForm() {
           </label>
           <input type="date" />
         </DetailsContainer>
-        <ButtonDesign>Search</ButtonDesign>
+        <ModalProvider backgroundComponent={FadingBackground}>
+          <FancyModalButton>
+            <Reservation />
+          </FancyModalButton>
+        </ModalProvider>
       </StyledForm>
     </StyledBookForm>
   );

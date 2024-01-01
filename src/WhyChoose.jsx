@@ -8,7 +8,7 @@ const StyledWhyChoose = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 2rem;
-  margin: 3rem 2rem;
+  margin: 0 2rem;
 `;
 
 const Hook = styled.div`

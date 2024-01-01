@@ -24,7 +24,7 @@ function PersonalInfo() {
         <Info label={"Age"} type={"number"} />
         <Info label={"Email"} type={"text"} />
         <Info label={"Address"} type={"text"} />
-        <Info label={"Zip Code"} type={"number"} />
+        {/* <Info label={"Zip Code"} type={"number"} /> */}
       </StyledPersonalInfo>
     </>
   );

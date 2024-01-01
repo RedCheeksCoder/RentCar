@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Modal, { BaseModalBackground } from "styled-react-modal";
 
 const StyledModal = Modal.styled`
-margin-top: 5rem;
+margin-top: 10rem;
   width: auto;
   display: flex;
   align-items: center;
@@ -12,9 +12,33 @@ margin-top: 5rem;
   opacity: ${(props) => props.opacity};
   transition : all 0.3s ease-in-out;
  font-family: "Poppins";
- padding: 0;
-
   `;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 25%;
+  font-family: "Poppins";
+`;
+
+const Button = styled.div`
+  background-color: #ff7231;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  border-radius: 7px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
+  width: 25rem;
+  text-align: center;
+  align-self: self-end;
+`;
 
 function FancyModalButton({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +63,8 @@ function FancyModalButton({ children }) {
   }
 
   return (
-    <div>
-      <button onClick={toggleModal}>Open modal</button>
+    <ButtonContainer>
+      <Button onClick={toggleModal}>Search</Button>
       <StyledModal
         isOpen={isOpen}
         afterOpen={afterOpen}
@@ -51,7 +75,7 @@ function FancyModalButton({ children }) {
         backgroundProps={{ opacity }}>
         <span>{children}</span>
       </StyledModal>
-    </div>
+    </ButtonContainer>
   );
 }
 /* <button onClick={toggleModal}>Close me</button> */

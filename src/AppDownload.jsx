@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const StyledAppDownload = styled.div`
-  height: 50dvh;
+  height: 70dvh;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
   img {
     cursor: pointer;
     height: 4rem;

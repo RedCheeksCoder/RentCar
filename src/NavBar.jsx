@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNavBar = styled.ul`
@@ -19,7 +19,7 @@ const List = styled.li`
 
     &:hover {
       color: #fe8122;
-      transition: all 0.23s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
   }
 `;
@@ -28,34 +28,22 @@ function NavBar() {
     <div>
       <StyledNavBar>
         <List>
-          <Link activeClass="active" smooth spy to="/">
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </List>
         <List>
-          <Link activeClass="active" smooth spy to="about">
-            About Us
-          </Link>
+          <Link to="/about">About Us</Link>
         </List>
         <List>
-          <Link activeClass="active" smooth spy to="models">
-            Vehicle Models
-          </Link>
+          <Link to="/models">Vehicle Models</Link>
         </List>
         <List>
-          <Link activeClass="active" smooth spy to="testimonials">
-            Testimonials
-          </Link>
+          <Link to="/testimonials">Testimonials</Link>
         </List>
         <List>
-          <Link activeClass="active" smooth spy to="team">
-            Our Team
-          </Link>
+          <Link to="/team">Our Team</Link>
         </List>
         <List>
-          <Link activeClass="active" smooth spy to="contact">
-            Contact Us
-          </Link>
+          <Link to="/contact">Contact Us</Link>
         </List>
       </StyledNavBar>
     </div>

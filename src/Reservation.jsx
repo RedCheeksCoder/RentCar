@@ -3,12 +3,12 @@ import PersonalInfo from "./PersonalInfo";
 import ButtonDesign from "./ButtonDesign";
 
 const StyledReservation = styled.div`
-  height: 100dvh;
+  max-height: 90vh;
   width: 40vw;
   background-color: white;
   overflow-x: hidden;
   overflow-y: scroll;
-  margin-bottom: 5rem;
+  padding-bottom: 10rem;
 `;
 
 const ButtonReserve = styled.div`
@@ -26,25 +26,27 @@ const Heading = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 `;
 
 const HeaderTitle = styled.div`
-  height: 100%;
+  box-sizing: border-box;
   color: white;
-  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 0 0.5rem 1rem;
 `;
 
 const HeaderContent = styled.div`
   color: #ff7231;
   background-color: #f7cdba;
-  padding: 0.1rem 1rem;
+  padding: 0 1rem;
   h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   p {
     color: #808080c8;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 `;
 const ReservationInfo = styled.div`
@@ -108,7 +110,7 @@ function Reservation() {
     <StyledReservation>
       <Heading>
         <HeaderTitle>
-          <h1>COMPLETE RESERVATION</h1>
+          <span>COMPLETE RESERVATION</span>
         </HeaderTitle>
         <HeaderContent>
           <h2>Upon completing this reservation enquiry, you will receive:</h2>
