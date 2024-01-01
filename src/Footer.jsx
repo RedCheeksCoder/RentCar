@@ -3,9 +3,8 @@ import styled from "styled-components";
 const StyledFooter = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 5rem auto;
+  margin: 1rem auto;
   max-width: 70vw;
-  padding-bottom: 5rem;
 `;
 
 const Container = styled.div`
@@ -34,10 +33,11 @@ const Container = styled.div`
     }
   }
 
-  h2 {
+  h4 {
     &:hover {
       color: #ff7231;
       transition: all 0.23s ease-in-out;
+      cursor: pointer;
     }
   }
 
@@ -70,7 +70,7 @@ const SubscribeButton = styled.div`
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
   color: #fff;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem 0.75rem;
   text-decoration: none;
@@ -97,8 +97,8 @@ function Footer() {
             rental made easy and affordable. Travel with comfort and
             convenience.
           </p>
-          <h2>(02) 882-0925</h2>
-          <h2>rentcar@org.co</h2>
+          <h4>(02) 882-0925</h4>
+          <h4>rentcar@org.co</h4>
         </Container>
         <Container>
           <h1>BRANCHES</h1>

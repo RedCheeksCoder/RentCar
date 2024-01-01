@@ -86,7 +86,7 @@ function Headline() {
         </CTA>
       </div>
       <CarImage>
-        <img src="/vios_prev_ui.png" alt="" />
+        <img loading="lazy" src="/vios_prev_ui.png" alt="" />
       </CarImage>
     </StyledHeadline>
   );

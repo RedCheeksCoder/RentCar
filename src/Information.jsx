@@ -4,6 +4,7 @@ const StyledInformation = styled.div`
   display: flex;
   justify-content: space-between;
   column-gap: 5rem;
+  margin-top: 5rem;
   b {
     color: red;
   }

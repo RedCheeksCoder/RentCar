@@ -6,6 +6,7 @@ const StyledTeam = styled.div`
   align-items: center;
   margin: 2rem auto;
   column-gap: 1rem;
+  width: 84rem;
 `;
 
 const ImageContainer = styled.div`
@@ -39,7 +40,7 @@ function Team() {
   return (
     <StyledTeam>
       <ImageContainer>
-        <img src="/employess.avif" alt="" />
+        <img loading="lazy" src="/employess.avif" alt="" />
       </ImageContainer>
       <Details>
         <h4>Making our customer service excellent</h4>

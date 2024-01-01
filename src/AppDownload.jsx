@@ -5,7 +5,6 @@ const StyledAppDownload = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8f8;
   img {
     cursor: pointer;
     height: 4rem;
@@ -47,12 +46,12 @@ function AppDownload() {
           veniam.
         </p>
         <div>
-          <img src="/google-play.png" alt="" />
-          <img src="/app-store.png" alt="" />
+          <img loading="lazy" src="/google-play.png" alt="" />
+          <img loading="lazy" src="/app-store.png" alt="" />
         </div>
       </Details>
       <PhoneContainer>
-        <img src="/phone.png" alt="" />
+        <img loading="lazy" src="/phone.png" alt="" />
       </PhoneContainer>
     </StyledAppDownload>
   );

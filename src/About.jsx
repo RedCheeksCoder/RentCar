@@ -1,5 +1,7 @@
+import PagesContainer from "./PagesContainer";
+import AboutContent from "./AboutContent";
 function About() {
-  return <div></div>;
+  return <PagesContainer title={"About us"} content={<AboutContent />} />;
 }
 
 export default About;

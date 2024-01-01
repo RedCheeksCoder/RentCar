@@ -13,7 +13,7 @@ const ImageContainer = styled.div`
 function CarCollection() {
   return (
     <ImageContainer>
-      <img src="/solo-car2.png" alt="" />
+      <img loading="lazy" src="/solo-car2.png" alt="" />
     </ImageContainer>
   );
 }

@@ -235,7 +235,7 @@ function Reservation() {
 
         <ReservationCarType>
           <h2>Toyota Vios</h2>
-          <img src="/bg-removed/5.png" alt="" />
+          <img loading="lazy" src="/bg-removed/5.png" alt="" />
         </ReservationCarType>
       </ReservationInfo>
       <PersonalInfo />

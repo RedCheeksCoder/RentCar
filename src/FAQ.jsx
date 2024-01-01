@@ -63,7 +63,7 @@ export default function FAQ() {
         </Header>
       </div>
       <CarImage>
-        <img src="/civic.png" alt="" />
+        <img loading="lazy" src="/civic.png" alt="" />
       </CarImage>
       <Accordion allowZeroExpanded={true}>
         {/* Question 1 */}

@@ -22,6 +22,7 @@ function Home() {
     <AppContainer>
       <ImageContainer>
         <img
+          loading="lazy"
           src="../public/Presentation1.png"
           alt=""
           width={600}

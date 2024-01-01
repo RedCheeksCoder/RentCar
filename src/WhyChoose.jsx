@@ -80,7 +80,7 @@ function WhyChoose() {
         <Details>
           <Detail>
             <DetailImage>
-              <img src="/car-round.png" alt="" />
+              <img loading="lazy" src="/car-round.png" alt="" />
             </DetailImage>
             <div>
               <h2>Cross Country Drive</h2>
@@ -92,7 +92,7 @@ function WhyChoose() {
           </Detail>
           <Detail>
             <DetailImage>
-              <img src="/dollar-round.png" alt="" />
+              <img loading="lazy" src="/dollar-round.png" alt="" />
             </DetailImage>
             <div>
               <h2>All Inclusive Pricing</h2>
@@ -104,7 +104,7 @@ function WhyChoose() {
           </Detail>
           <Detail>
             <DetailImage>
-              <img src="/hand-dollar-round.png" alt="" />
+              <img loading="lazy" src="/hand-dollar-round.png" alt="" />
             </DetailImage>
             <div>
               <h2>No hidden Charges</h2>

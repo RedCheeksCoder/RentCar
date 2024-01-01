@@ -4,7 +4,7 @@ const StyledBanner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60dvh;
+  height: 30dvh;
 `;
 
 const BannerStyle = styled.div`
@@ -33,7 +33,7 @@ function Banner() {
   return (
     <StyledBanner>
       <BannerStyle>
-        <img src="/banner-image.png" alt="" />
+        <img loading="lazy" src="/banner-image.png" alt="" />
         <h1>
           RESERVE A CAR VIA OUR CONTACT <span>(02) 882-0925</span>
         </h1>

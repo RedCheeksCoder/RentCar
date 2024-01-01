@@ -9,7 +9,7 @@ const StyledDisplay = styled.div`
 function Display() {
   return (
     <StyledDisplay>
-      <img src="/bg-removed/vios.png" alt="" />
+      <img loading="lazy" src="/bg-removed/vios.png" alt="" />
     </StyledDisplay>
   );
 }

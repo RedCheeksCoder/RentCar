@@ -48,7 +48,7 @@ function CartItem({ car }) {
   return (
     <CarItemDesign>
       <ImageContainer>
-        <img src={car.image} alt="" />
+        <img loading="lazy"  src={car.image} alt="" />
       </ImageContainer>
       <div>
         <Heading>

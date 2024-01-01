@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Registration from "./Registration";
 
 const StyledHeader = styled.div`
+  width: 84rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

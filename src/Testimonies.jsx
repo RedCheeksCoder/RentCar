@@ -5,6 +5,7 @@ const StyledTestimonies = styled.div`
   flex-direction: column;
   column-gap: 1rem;
   margin: 3rem 2rem;
+  width: 84rem;
 `;
 
 const Heading = styled.div`
@@ -64,10 +65,10 @@ function Testimonies() {
           </p>
           <div>
             <h3>
-              <imRoundImageg src="/memma-stone.webp" alt="" />
+              <imRoundImageg loading="lazy" src="/memma-stone.webp" alt="" />
               MEMMA STONE
               <div>
-                <img src="/svg/quote.svg" alt="" />
+                <img loading="lazy" src="/svg/quote.svg" alt="" />
               </div>
             </h3>
           </div>
@@ -80,10 +81,10 @@ function Testimonies() {
           </p>
           <div>
             <h3>
-              <RoundImage src="/pettah-porker.avif" alt="" />
+              <RoundImage loading="lazy" src="/pettah-porker.avif" alt="" />
               PETTAH PORKER
               <div>
-                <img src="/svg/quote.svg" alt="" />
+                <img loading="lazy" src="/svg/quote.svg" alt="" />
               </div>
             </h3>
           </div>

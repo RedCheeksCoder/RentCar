@@ -8,6 +8,7 @@ const StyledAbout = styled.div`
   align-items: center;
   padding: 0 2rem;
   column-gap: 2rem;
+  margin: 4rem 0;
 `;
 
 const Image = styled.div`
@@ -17,7 +18,7 @@ const Image = styled.div`
 `;
 
 const Details = styled.div`
-  max-width: 40%;
+  max-width: 30%;
 
   h1 {
     margin: 0;
@@ -58,7 +59,7 @@ function AboutContent() {
   return (
     <StyledAbout>
       <Image>
-        <img src="/office-meeting.jpg" alt="About us" />
+        <img loading="lazy" src="/office-meeting.jpg" alt="About us" />
       </Image>
       <Details>
         <h3>ABOUT THE COMPANY</h3>
