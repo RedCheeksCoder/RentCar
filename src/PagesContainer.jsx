@@ -33,7 +33,9 @@ function PagesContainer({ title, content }) {
       </HeaderTitle>
       {content}
       <Steps />
-      <Banner />
+      <Banner>
+        RESERVE A CAR VIA OUR CONTACT <span>(02) 882-0925</span>
+      </Banner>
       <Footer />
     </StyledAbout>
   );

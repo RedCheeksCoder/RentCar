@@ -13,7 +13,6 @@ const StyledApp = styled.div`
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  position: relative;
 `;
 
 function App() {

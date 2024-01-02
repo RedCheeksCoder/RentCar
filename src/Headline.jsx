@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { HiOutlineBookOpen, HiOutlineInformationCircle } from "react-icons/hi2";
-import ButtonDesign from "./ButtonDesign";
 
 const StyledHeadline = styled.div`
   height: 90dvh;
@@ -8,7 +7,6 @@ const StyledHeadline = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 2rem;
   padding: 1rem;
 `;
 
@@ -17,6 +15,45 @@ const CarImage = styled.div`
   img {
     height: auto;
     width: 50rem;
+    /* 2xl */
+    @media (max-width: 1836px) {
+      width: 40rem;
+    }
+
+    /* xl */
+    @media (max-width: 1620px) {
+      width: 35rem;
+    }
+
+    /* lg */
+    @media (max-width: 1500px) {
+      width: 30rem;
+    }
+
+    /* md */
+    @media (max-width: 1390px) {
+      width: 25rem;
+    }
+
+    /* sm */
+    @media (max-width: 1275px) {
+      width: 20rem;
+    }
+
+    /* xs */
+    @media (max-width: 1160px) {
+      display: none;
+    }
+  }
+`;
+
+const HeadlineContainer = styled.div`
+  @media (max-width: 1160px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 `;
 
@@ -30,12 +67,24 @@ const Heading = styled.h1`
   b {
     color: #ff4d30;
   }
+  @media (max-width: 1160px) {
+    font-size: 6rem;
+  }
+  @media (max-width: 1160px) {
+    font-size: 5rem;
+  }
 `;
 
 const Hook = styled.p`
   color: #808080c8;
   text-wrap: balance;
   font-size: 1rem;
+  @media (max-width: 1160px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 1160px) {
+    font-size: 1rem;
+  }
 `;
 
 const LearnMore = styled.a`
@@ -49,11 +98,15 @@ const LearnMore = styled.a`
   font-weight: bold;
   padding: 1rem;
   text-decoration: none;
+  width: 100%;
   &:hover {
     color: black;
     background-color: white;
     outline: 2px solid black;
     transition: all 0.2s;
+  }
+  @media (max-width: 1160px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -64,12 +117,46 @@ const CTA = styled.div`
   column-gap: 1rem;
   margin-top: 2rem;
   padding-top: 1rem;
+  @media (max-width: 1160px) {
+    margin-top: 1rem;
+    padding-top: 0;
+    row-gap: 1rem;
+    flex-direction: column;
+  }
+`;
+
+const BookButton = styled.a`
+  background-color: #ff7231;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
+  width: 100%;
+  &:hover {
+    background-color: #ff7231c5;
+    transition: all 0.3s;
+  }
+  @media (max-width: 1160px) {
+    font-size: 1.5rem;
+  }
+`;
+
+const Title = styled.div`
+  font-size: 2rem;
+  margin-bottom: 2rem;
 `;
 function Headline() {
   return (
     <StyledHeadline>
-      <div>
+      <HeadlineContainer>
         <Heading>
+          <Title>Map your journey now</Title>
           Rent a <b>car</b>, <span>not a hassle.</span>
         </Heading>
         <Hook>
@@ -77,14 +164,14 @@ function Headline() {
           rental made easy and affordable. Travel with comfort and convenience.
         </Hook>
         <CTA>
-          <ButtonDesign href="">
+          <BookButton href="#bookform">
             Book ride Now <HiOutlineBookOpen />
-          </ButtonDesign>
-          <LearnMore href="">
+          </BookButton>
+          <LearnMore href="#faq">
             Learn more <HiOutlineInformationCircle />
           </LearnMore>
         </CTA>
-      </div>
+      </HeadlineContainer>
       <CarImage>
         <img loading="lazy" src="/vios_prev_ui.png" alt="" />
       </CarImage>

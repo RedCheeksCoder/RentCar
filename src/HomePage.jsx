@@ -9,22 +9,22 @@ import Footer from "./Footer";
 import Testimonies from "./Testimonies";
 import FAQ from "./FAQ";
 import AppDownload from "./AppDownload";
+import styled from "styled-components";
+import Registration from "./Registration";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 function HomePage() {
   return (
-    <div>
+    <Container>
       <Header />
       <Headline />
-      <BookForm />
-      <Steps />
-      <PickCar />
-      <Banner />
-      <WhyChoose />
-      <Testimonies />
-      <FAQ />
-      <AppDownload />
-      <Footer />
-    </div>
+    </Container>
   );
 }
 

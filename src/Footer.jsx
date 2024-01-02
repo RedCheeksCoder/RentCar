@@ -5,6 +5,7 @@ const StyledFooter = styled.div`
   justify-content: space-between;
   margin: 1rem auto;
   max-width: 70vw;
+  border-top: 1px;
 `;
 
 const Container = styled.div`

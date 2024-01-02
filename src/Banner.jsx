@@ -29,14 +29,12 @@ const BannerStyle = styled.div`
     color: #ff4d30;
   }
 `;
-function Banner() {
+function Banner({ children }) {
   return (
     <StyledBanner>
       <BannerStyle>
         <img loading="lazy" src="/banner-image.png" alt="" />
-        <h1>
-          RESERVE A CAR VIA OUR CONTACT <span>(02) 882-0925</span>
-        </h1>
+        <h1>{children}</h1>
       </BannerStyle>
     </StyledBanner>
   );

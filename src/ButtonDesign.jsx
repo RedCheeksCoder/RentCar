@@ -17,8 +17,8 @@ const BookRide = styled.a`
     transition: all 0.3s;
   }
 `;
-function ButtonDesign({ children }) {
-  return <BookRide>{children}</BookRide>;
+function ButtonDesign({ children, onClick }) {
+  return <BookRide onClick={onClick}>{children}</BookRide>;
 }
 
 export default ButtonDesign;

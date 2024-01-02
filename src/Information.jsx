@@ -6,7 +6,7 @@ const StyledInformation = styled.div`
   column-gap: 5rem;
   margin-top: 5rem;
   b {
-    color: red;
+    color: #ff7231;
   }
   form {
     display: flex;
@@ -43,6 +43,7 @@ const Details = styled.div`
   font-size: 1.5rem;
   margin: 0 2rem;
   width: 70%;
+
   p {
     color: #818080ae;
     font-size: 1.2rem;
@@ -56,7 +57,9 @@ function Information() {
   return (
     <StyledInformation>
       <Details>
-        <h1>Contact us for more details</h1>
+        <h1>
+          <b>Contact us</b> for more details
+        </h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eos aut
           quis. Dolor, hic sint.

@@ -22,6 +22,9 @@ const List = styled.li`
       transition: all 0.3s ease-in-out;
     }
   }
+  @media (max-width: 1250px) {
+    display: none;
+  }
 `;
 function NavBar() {
   return (

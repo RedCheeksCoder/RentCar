@@ -8,7 +8,7 @@ import {
 import "./Accordion.css";
 import styled from "styled-components";
 
-const StyledFAQ = styled.div`
+const StyledFAQ = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +51,7 @@ const CarImage = styled.div`
 `;
 export default function FAQ() {
   return (
-    <StyledFAQ>
+    <StyledFAQ id="faq">
       <div>
         <Header>
           <h4>FAQ</h4>

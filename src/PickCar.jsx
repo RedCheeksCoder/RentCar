@@ -93,7 +93,7 @@ const PickTitle = styled.div`
   }
   h3 {
     color: #ff7231;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -177,6 +177,24 @@ const TableData = styled.div`
   border: 2px solid #706f7b;
 `;
 
+const ButtonReserve = styled.a`
+  background-color: #ff7231;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
+  &:hover {
+    background-color: #ff7231c5;
+    transition: all 0.3s;
+  }
+`;
+
 function PickCar() {
   const [carId, setCarId] = useState(0);
   return (
@@ -233,7 +251,7 @@ function PickCar() {
               <div>{pickCars[carId].gasolineType}</div>
             </TableData>
           </Table>
-          <ButtonDesign>RESERVE NOW</ButtonDesign>
+          <ButtonReserve href="#bookform">RESERVE NOW</ButtonReserve>
         </Details>
       </PickInformation>
     </StyledPickCar>

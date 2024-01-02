@@ -3,8 +3,10 @@ import ScrollToTopButton from "./BackToTop";
 import HomePage from "./HomePage";
 
 const AppContainer = styled.div`
-  width: 70vw;
-  height: 100dvh;
+  width: 70%;
+  @media (max-width: 890px) {
+    width: 100%;
+  }
 `;
 const ImageContainer = styled.div`
   position: absolute;
@@ -20,15 +22,6 @@ const ImageContainer = styled.div`
 function Home() {
   return (
     <AppContainer>
-      <ImageContainer>
-        <img
-          loading="lazy"
-          src="../public/Presentation1.png"
-          alt=""
-          width={600}
-          height={600}
-        />
-      </ImageContainer>
       <HomePage />
       <ScrollToTopButton />
     </AppContainer>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledRegistration = styled.div`
+const StyledRegistration = styled.a`
   background-color: #ff7231;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   border-radius: 7px;
@@ -12,11 +12,14 @@ const StyledRegistration = styled.div`
   font-weight: bold;
   padding: 12px 20px;
   text-decoration: none;
+  @media (max-width: 450px) {
+    display: none;
+  }
 `;
 function Registration() {
   return (
     <div>
-      <StyledRegistration>Registration</StyledRegistration>
+      <StyledRegistration href="#bookform">Registration</StyledRegistration>
     </div>
   );
 }

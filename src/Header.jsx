@@ -4,9 +4,9 @@ import NavBar from "./NavBar";
 import Registration from "./Registration";
 
 const StyledHeader = styled.div`
-  width: 84rem;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `;
 

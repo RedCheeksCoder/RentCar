@@ -5,7 +5,7 @@ const StyledTestimonies = styled.div`
   flex-direction: column;
   column-gap: 1rem;
   margin: 3rem 2rem;
-  width: 84rem;
+  width: 100%;
 `;
 
 const Heading = styled.div`
@@ -19,18 +19,21 @@ const Heading = styled.div`
     margin: 0;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #ff7231;
   }
   p {
     color: #818080ae;
     width: 50%;
     font-size: 1rem;
+    text-align: center;
   }
 `;
 
-const RoundImage = styled.div`
+const RoundImage = styled.img`
   border-radius: 50%;
+  height: 4rem;
+  margin-right: 1rem;
 `;
 
 const Testimony = styled.div`
@@ -44,6 +47,16 @@ const Testimony = styled.div`
     font-size: 1.5rem;
   }
 `;
+
+const NameContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ClientName = styled.h3`
+  margin-right: 1rem;
+`;
 function Testimonies() {
   return (
     <StyledTestimonies>
@@ -51,43 +64,35 @@ function Testimonies() {
         <h4>What do people say about us?</h4>
         <h1>Clients Reviews</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, et
-          fugiat similique recusandae natus provident soluta beatae? Dignissimos
-          voluptatem nisi veniam sit possimus libero rerum.
+          A client review is a valuable feedback from our customer about their
+          experience with ou service, and we would like to keep on influencing
+          future customers' decisions.
         </p>
       </Heading>
       <Testimony>
         <div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-            aperiam iste in assumenda excepturi maxime culpa quam libero dolor
-            vitae.
+            Exceptional service and top-quality vehicles! The booking process
+            was seamless, and the car exceeded our expectations. Truly the best
+            car rental experience we've had!
           </p>
-          <div>
-            <h3>
-              <imRoundImageg loading="lazy" src="/memma-stone.webp" alt="" />
-              MEMMA STONE
-              <div>
-                <img loading="lazy" src="/svg/quote.svg" alt="" />
-              </div>
-            </h3>
-          </div>
+          <NameContainer>
+            <RoundImage loading="lazy" src="/memma-stone.jpg" alt="" />
+            <ClientName>MEMMA STONE </ClientName>
+            <img loading="lazy" src="/svg/quote.svg" alt="" />
+          </NameContainer>
         </div>
         <div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
-            aperiam iste in assumenda excepturi maxime culpa quam libero dolor
-            vitae.
+            Impressive range of high-quality cars and outstanding customer
+            service! The vehicle we rented was in excellent condition and made
+            our trip memorable. Best rental experience ever!
           </p>
-          <div>
-            <h3>
-              <RoundImage loading="lazy" src="/pettah-porker.avif" alt="" />
-              PETTAH PORKER
-              <div>
-                <img loading="lazy" src="/svg/quote.svg" alt="" />
-              </div>
-            </h3>
-          </div>
+          <NameContainer>
+            <RoundImage loading="lazy" src="/pettah-porker.png" alt="" />
+            <ClientName>PETTAH PORKER </ClientName>
+            <img loading="lazy" src="/svg/quote.svg" alt="" />
+          </NameContainer>
         </div>
       </Testimony>
     </StyledTestimonies>

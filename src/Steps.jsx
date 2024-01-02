@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledSteps = styled.div`
   height: 60dvh;
-  width: 84rem;
+  width: 70%;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ const Stepss = styled.div`
   flex-direction: column;
   align-items: center;
   img {
-    height: 5rem;
+    max-height: 5rem;
   }
 
   h3 {
@@ -49,6 +49,7 @@ const Header = styled.div`
   margin-bottom: 1.5rem;
   h4 {
     color: #ff7431;
+    font-size: 1.3rem;
   }
   h1 {
     margin-block-end: 0;

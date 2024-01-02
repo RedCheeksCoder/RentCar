@@ -7,7 +7,7 @@ const StyledAppDownload = styled.div`
   align-items: center;
   img {
     cursor: pointer;
-    height: 4rem;
+    max-height: 4rem;
   }
   h1 {
     font-size: 3rem;

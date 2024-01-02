@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import Modal, { BaseModalBackground } from "styled-react-modal";
 
@@ -38,30 +37,17 @@ const Button = styled.div`
   width: 25rem;
   text-align: center;
   align-self: self-end;
+  margin-left: 1rem;
 `;
 
-function FancyModalButton({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [opacity, setOpacity] = useState(0);
-
-  function toggleModal() {
-    setOpacity(0);
-    setIsOpen(!isOpen);
-  }
-
-  function afterOpen() {
-    setTimeout(() => {
-      setOpacity(1);
-    }, 100);
-  }
-
-  function beforeClose() {
-    return new Promise((resolve) => {
-      setOpacity(0);
-      setTimeout(resolve, 300);
-    });
-  }
-
+function FancyModalButton({
+  children,
+  toggleModal,
+  afterOpen,
+  beforeClose,
+  isOpen,
+  opacity,
+}) {
   return (
     <ButtonContainer>
       <Button onClick={toggleModal}>Search</Button>
@@ -78,7 +64,6 @@ function FancyModalButton({ children }) {
     </ButtonContainer>
   );
 }
-/* <button onClick={toggleModal}>Close me</button> */
 
 export const FadingBackground = styled(BaseModalBackground)`
   opacity: ${(props) => props.opacity};

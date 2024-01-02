@@ -100,12 +100,28 @@ const Info = styled.div`
   }
 `;
 
+let carTypes = [
+  "Ford Everest",
+  "Honda BRV",
+  "Isuzu mu-X",
+  "Montero Sport",
+  "Suzuki Ertiga",
+  "Toyota Innova",
+];
+
 const Updates = styled.div`
   padding-left: 2rem;
   padding-top: 2rem;
   font-size: 1.2rem;
 `;
-function Reservation() {
+function Reservation({
+  carType,
+  pickUpLoc,
+  pickUpTime,
+  dropOfLoc,
+  dropOfTime,
+  handleReservation,
+}) {
   return (
     <StyledReservation>
       <Heading>
@@ -146,7 +162,7 @@ function Reservation() {
               <div>Pick-Up Date and Time</div>
               <div>
                 <span>
-                  2024-01-11/ <input type="time" />
+                  {pickUpTime}/ <input type="time" />
                 </span>
               </div>
             </Info>
@@ -174,7 +190,7 @@ function Reservation() {
               <div>Drop-Of Date and Time</div>
               <div>
                 <span>
-                  2024-01-11/ <input type="time" />
+                  {dropOfTime}/ <input type="time" />
                 </span>
               </div>
             </Info>
@@ -201,7 +217,7 @@ function Reservation() {
             <Info>
               <div>Pick-Up Location</div>
               <div>
-                <span>Taguig, BGC</span>
+                <span>{pickUpLoc}</span>
               </div>
             </Info>
           </LocationAndDate>
@@ -227,15 +243,15 @@ function Reservation() {
             <Info>
               <div>Drop-Of Location</div>
               <div>
-                <span>Ayala Triangle</span>
+                <span>{dropOfLoc}</span>
               </div>
             </Info>
           </LocationAndDate>
         </ReservationInput>
 
         <ReservationCarType>
-          <h2>Toyota Vios</h2>
-          <img loading="lazy" src="/bg-removed/5.png" alt="" />
+          <h2>{carTypes[carType] || "Toyota Innova"}</h2>
+          <img loading="lazy" src={`/bg-removed/${carType}.png`} alt="" />
         </ReservationCarType>
       </ReservationInfo>
       <PersonalInfo />
@@ -244,7 +260,7 @@ function Reservation() {
         <span>Please send me latest news and updates</span>
       </Updates>
       <ButtonReserve>
-        <ButtonDesign>Reserve Now</ButtonDesign>
+        <ButtonDesign onClick={handleReservation}>Reserve Now</ButtonDesign>
       </ButtonReserve>
     </StyledReservation>
   );
