@@ -31,14 +31,7 @@ const StyledForm = styled.div`
   align-items: center;
   margin: 0 2rem 2rem 2rem;
   width: 90%;
-  a {
-    width: 25%;
-    height: 2rem;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin-top: 2rem;
-    margin-left: 1rem;
-  }
+
   @media (max-width: 1515px) {
     justify-content: center;
   }
@@ -48,9 +41,9 @@ const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  margin: 1rem 2rem 1rem 1rem;
+  margin: 1rem;
   width: 100%;
-  max-width: 20rem;
+  max-width: 22rem;
   label {
     font-weight: 600;
     margin-bottom: 1rem;

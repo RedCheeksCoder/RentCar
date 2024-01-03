@@ -19,8 +19,9 @@ const ButtonContainer = styled.div`
   align-items: center;
   height: 6rem;
   min-width: 20%;
-  max-width: 30%;
+  max-width: 100%;
   font-family: "Poppins";
+  margin-left: 1rem;
 `;
 
 const Button = styled.div`
@@ -35,10 +36,13 @@ const Button = styled.div`
   font-weight: bold;
   padding: 1rem;
   text-decoration: none;
-  width: 25rem;
+  width: 20rem;
   text-align: center;
   align-self: self-end;
-  margin-left: 1rem;
+
+  @media (max-width: 1000px) {
+    margin-left: 0;
+  }
 `;
 
 function FancyModalButton({

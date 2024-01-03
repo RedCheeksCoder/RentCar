@@ -104,10 +104,13 @@ const PickTitle = styled.div`
 
 const PickInformation = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  @media (max-width: 1820px) {
+    justify-content: center;
+  }
 `;
 
 const Choices = styled.div`
