@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const StyledSteps = styled.div`
-  height: 60dvh;
-  width: 70%;
+  min-height: 60dvh;
+  width: 90%;
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,10 @@ const Details = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
+  @media (max-width: 1135px) {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 `;
 
 const Stepss = styled.div`
@@ -27,7 +31,7 @@ const Stepss = styled.div`
   flex-direction: column;
   align-items: center;
   img {
-    max-height: 5rem;
+    height: 5rem;
   }
 
   h3 {
@@ -55,6 +59,9 @@ const Header = styled.div`
     margin-block-end: 0;
     margin-block-start: 0;
     font-size: 2rem;
+    @media (max-width: 1135px) {
+      text-align: center;
+    }
   }
   p {
     color: #818080ae;
@@ -79,8 +86,9 @@ function Steps() {
             </StepsImageContainer>
             <h3>Car Selection</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              minus optio odio neque esse fugit.
+              Browse through our diverse range of top-quality vehicles. Choose
+              the one that best suits your needs and preferences for a perfect
+              ride.
             </p>
           </Stepss>
         </div>
@@ -91,8 +99,8 @@ function Steps() {
             </StepsImageContainer>
             <h3>Fill details</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              minus optio odio neque esse fugit.
+              Provide your personal details in our secure form. This ensures a
+              seamless reservation process and a personalized rental experience.
             </p>
           </Stepss>
         </div>
@@ -103,8 +111,9 @@ function Steps() {
             </StepsImageContainer>
             <h3>Drive Car</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              minus optio odio neque esse fugit.
+              Once the reservation is confirmed, the chosen car is yours to
+              drive. Enjoy the comfort and freedom of your journey. Safe
+              travels!
             </p>
           </Stepss>
         </div>

@@ -18,7 +18,8 @@ const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 6rem;
-  width: 25%;
+  min-width: 20%;
+  max-width: 30%;
   font-family: "Poppins";
 `;
 

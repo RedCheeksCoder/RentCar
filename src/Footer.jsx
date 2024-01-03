@@ -1,17 +1,31 @@
 import styled from "styled-components";
 
 const StyledFooter = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
   justify-content: space-between;
-  margin: 1rem auto;
-  max-width: 70vw;
+  margin: 1rem 1rem 3rem 1rem;
+  max-width: 100%;
   border-top: 1px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    text-align: center;
+  }
 `;
 
 const Container = styled.div`
-  width: 20%;
+  width: 100%;
   margin-top: 0;
   padding-top: 0;
+
   h1 {
     font-size: 1rem;
   }
@@ -32,6 +46,10 @@ const Container = styled.div`
       color: #ff7231;
       transition: all 0.23s ease-in-out;
     }
+
+    @media (max-width: 500px) {
+      margin: 0.5rem 0;
+    }
   }
 
   h4 {
@@ -47,6 +65,7 @@ const Container = styled.div`
     padding: 0;
   }
   input {
+    box-sizing: border-box;
     background-color: #ececec;
     border-color: transparent;
     border-width: 1px;
@@ -57,14 +76,18 @@ const Container = styled.div`
     margin-top: 1rem;
     outline: none;
     padding: 10px 48px;
-    width: 64%;
     text-align: center;
     border-radius: 5px;
     margin-bottom: 0.2rem;
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
   }
 `;
 
 const SubscribeButton = styled.div`
+  box-sizing: border-box;
   background-color: #ff4d30;
   border: 2px solid #ff4d30;
   border-radius: 0.3rem;
@@ -79,7 +102,7 @@ const SubscribeButton = styled.div`
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
-  width: 90%;
+  width: 100%;
   text-align: center;
   &:hover {
     background-color: #ff7231;

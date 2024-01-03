@@ -8,6 +8,7 @@ const StyledAbout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 70%;
 `;
 const Title = styled.div`
   height: 40dvh;

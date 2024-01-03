@@ -48,6 +48,7 @@ const CarImage = styled.div`
 `;
 
 const HeadlineContainer = styled.div`
+  z-index: 5;
   @media (max-width: 1160px) {
     display: flex;
     flex-direction: column;
@@ -94,11 +95,12 @@ const LearnMore = styled.a`
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem;
   text-decoration: none;
   width: 100%;
+  text-align: center;
   &:hover {
     color: black;
     background-color: white;
@@ -117,6 +119,7 @@ const CTA = styled.div`
   column-gap: 1rem;
   margin-top: 2rem;
   padding-top: 1rem;
+  padding-right: 1rem;
   @media (max-width: 1160px) {
     margin-top: 1rem;
     padding-top: 0;
@@ -133,11 +136,12 @@ const BookButton = styled.a`
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem;
   text-decoration: none;
   width: 100%;
+  text-align: center;
   &:hover {
     background-color: #ff7231c5;
     transition: all 0.3s;

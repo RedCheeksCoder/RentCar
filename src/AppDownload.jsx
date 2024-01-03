@@ -1,38 +1,64 @@
 import styled from "styled-components";
 
 const StyledAppDownload = styled.div`
-  height: 70dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 70dvh;
+  min-height: 40dvh;
+  width: 100%;
+  margin: 3rem 0;
+
   img {
     cursor: pointer;
-    max-height: 4rem;
+    height: 5rem;
   }
   h1 {
     font-size: 3rem;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     line-height: 1.2;
+    @media (max-width: 1325px) {
+      font-size: 2rem;
+      margin: 0;
+    }
   }
   p {
     color: #818080ae;
     font-size: 1rem;
   }
+  @media (max-width: 850px) {
+    text-align: center;
+    flex-direction: column;
+  }
 `;
 
 const Details = styled.div`
   width: 50%;
-  padding: 1rem;
-  margin: 1rem;
+  @media (max-width: 850px) {
+    width: 90%;
+    margin: 0;
+  }
 `;
 
 const PhoneContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8rem;
+  margin-left: 4rem;
   img {
     height: 25rem;
+    @media (max-width: 1250px) {
+      height: 20rem;
+    }
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+`;
+
+const AppStoreContainer = styled.div`
+  img {
+    margin: 0 1rem;
   }
 `;
 function AppDownload() {
@@ -45,10 +71,10 @@ function AppDownload() {
           sapiente natus eos minus animi sed dignissimos ullam perferendis vel
           veniam.
         </p>
-        <div>
+        <AppStoreContainer>
           <img loading="lazy" src="/google-play.png" alt="" />
           <img loading="lazy" src="/app-store.png" alt="" />
-        </div>
+        </AppStoreContainer>
       </Details>
       <PhoneContainer>
         <img loading="lazy" src="/phone.png" alt="" />

@@ -70,6 +70,8 @@ const StyledPickCar = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
+  width: 100%;
 `;
 
 const PickTitle = styled.div`
@@ -86,9 +88,12 @@ const PickTitle = styled.div`
   }
   h1 {
     font-size: 3rem;
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+    }
   }
   p {
-    max-width: 50%;
+    max-width: 80%;
     color: #808080c8;
   }
   h3 {
@@ -99,7 +104,8 @@ const PickTitle = styled.div`
 
 const PickInformation = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
 `;
@@ -108,6 +114,10 @@ const Choices = styled.div`
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0.5rem;
+  text-align: left;
+  ul {
+    padding-inline-start: 0;
+  }
   li {
     margin: 0.2rem 0;
     padding: 0.7rem 3rem;
@@ -118,6 +128,12 @@ const Choices = styled.div`
       background-color: #ff7231;
       color: white;
       transition: all 0.23s ease-in-out;
+    }
+    @media (max-width: 1350px) {
+      margin: 1rem 0;
+    }
+    @media (max-width: 500px) {
+      margin: 0.15rem 0;
     }
   }
 `;
@@ -130,6 +146,9 @@ const CarImage = styled.div`
     width: 100%;
     height: 20rem;
     display: block;
+    @media (max-width: 500px) {
+      height: 15rem;
+    }
   }
 `;
 

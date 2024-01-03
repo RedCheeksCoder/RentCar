@@ -18,7 +18,7 @@ const Image = styled.div`
 `;
 
 const Details = styled.div`
-  max-width: 30%;
+  max-width: 50%;
 
   h1 {
     margin: 0;
@@ -64,13 +64,16 @@ function AboutContent() {
       <Details>
         <h3>ABOUT THE COMPANY</h3>
         <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-          neque?
+          Experience unparalleled freedom with our premium, customer-centric car
+          rentals.
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-          atque eaque pariatur assumenda obcaecati dolores facilis neque, sint
-          officiis maxime!
+          Our car rental company is committed to providing an exceptional rental
+          experience. We offer a wide range of top-quality vehicles to suit all
+          journeys and preferences. Our seamless reservation process,
+          personalized customer service, and commitment to your comfort and
+          satisfaction set us apart. Experience the freedom of the open road
+          with us.
         </p>
         <ListContainer>
           <li>

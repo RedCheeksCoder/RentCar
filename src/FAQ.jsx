@@ -13,9 +13,8 @@ const StyledFAQ = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0;
   b {
-    color: #ff7431;
+    color: #4e4b4b;
   }
 `;
 const Header = styled.div`
@@ -24,29 +23,45 @@ const Header = styled.div`
   justify-content: center;
   align-items: center;
   h4 {
+    font-size: 1.5rem;
     color: #ff7431;
+    @media (max-width: 1000px) {
+      text-align: center;
+      font-size: 1rem;
+    }
   }
 
   h1 {
     margin-block-end: 0;
     margin-block-start: 0;
     font-size: 3rem;
+    @media (max-width: 1000px) {
+      text-align: center;
+      font-size: 2rem;
+    }
   }
   p {
     color: #818080ae;
     width: 70%;
     font-size: 1rem;
     text-align: center;
+    @media (max-width: 1000px) {
+      text-align: center;
+      font-size: 0.8rem;
+    }
   }
 `;
 
 const CarImage = styled.div`
-  z-index: 10;
+  z-index: -1;
   position: absolute;
   left: 0;
   img {
     height: auto;
     width: 30rem;
+    @media (max-width: 1600px) {
+      display: none;
+    }
   }
 `;
 export default function FAQ() {

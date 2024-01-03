@@ -10,7 +10,6 @@ import Testimonies from "./Testimonies";
 import FAQ from "./FAQ";
 import AppDownload from "./AppDownload";
 import styled from "styled-components";
-import Registration from "./Registration";
 
 const Container = styled.div`
   display: flex;
@@ -24,6 +23,20 @@ function HomePage() {
     <Container>
       <Header />
       <Headline />
+      <BookForm />
+      <Steps />
+      <PickCar />
+      <Banner>
+        Experience the Journey, Discover Your <span>Freedom</span>
+      </Banner>
+      <WhyChoose />
+      <Testimonies />
+      <FAQ />
+      <AppDownload />
+      <Banner>
+        RESERVE A CAR VIA OUR CONTACT <span>(02) 882-0925</span>
+      </Banner>
+      <Footer />
     </Container>
   );
 }

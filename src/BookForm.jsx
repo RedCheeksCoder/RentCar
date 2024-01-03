@@ -13,6 +13,7 @@ const StyledBookForm = styled.section`
   display: flex;
   align-items: start;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 100%;
   padding-bottom: 1rem;
   border-radius: 9px;
@@ -25,10 +26,11 @@ const StyledForm = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   margin: 0 2rem 2rem 2rem;
-  width: 100%;
+  width: 90%;
   a {
     width: 25%;
     height: 2rem;
@@ -37,6 +39,9 @@ const StyledForm = styled.div`
     margin-top: 2rem;
     margin-left: 1rem;
   }
+  @media (max-width: 1515px) {
+    justify-content: center;
+  }
 `;
 
 const DetailsContainer = styled.div`
@@ -44,24 +49,29 @@ const DetailsContainer = styled.div`
   flex-direction: column;
   font-size: 1rem;
   margin: 1rem 2rem 1rem 1rem;
-  width: 25%;
+  width: 100%;
+  max-width: 20rem;
   label {
     font-weight: 600;
     margin-bottom: 1rem;
   }
   select,
   input {
+    box-sizing: border-box;
     border: 1px solid #ccd7e6;
     border-radius: 3px;
     color: #ababab;
     font-size: 1rem;
     font-weight: 400;
     outline: none;
-    max-width: 20rem;
+    width: 100%;
     padding: 1rem;
   }
   b {
     color: #ff4d30;
+  }
+  @media (max-width: 1590px) {
+    max-width: 30rem;
   }
 `;
 

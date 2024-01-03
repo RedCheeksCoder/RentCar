@@ -17,16 +17,26 @@ const Heading = styled.div`
   h1 {
     font-size: 3rem;
     margin: 0;
+    @media (max-width: 850px) {
+      font-size: 2rem;
+    }
   }
   h4 {
     font-size: 1.3rem;
     color: #ff7231;
+    @media (max-width: 850px) {
+      font-size: 1rem;
+    }
   }
   p {
     color: #818080ae;
     width: 50%;
     font-size: 1rem;
     text-align: center;
+    @media (max-width: 850px) {
+      width: 100%;
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -45,6 +55,13 @@ const Testimony = styled.div`
   margin: 2rem 0;
   p {
     font-size: 1.5rem;
+    @media (max-width: 850px) {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 850px) {
+    flex-direction: column;
   }
 `;
 

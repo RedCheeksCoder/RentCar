@@ -9,16 +9,22 @@ const StyledWhyChoose = styled.div`
   align-items: center;
   column-gap: 2rem;
   margin: 0 2rem;
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
 `;
 
 const Hook = styled.div`
-  width: 50%;
+  min-width: 50%;
   padding: 0 1rem;
 
   h1 {
     font-size: 3rem;
     line-height: 1.2;
     margin: 0;
+    @media (max-width: 850px) {
+      font-size: 2rem;
+    }
   }
   p {
     color: #818080ae;
@@ -27,12 +33,16 @@ const Hook = styled.div`
 `;
 
 const Details = styled.div`
-  width: 50%;
+  min-width: 50%;
   padding: 0 1rem;
   font-size: 1rem;
   p {
     color: #818080ae;
     font-size: 1rem;
+  }
+
+  @media (max-width: 850px) {
+    margin-top: 2rem;
   }
 `;
 
@@ -49,6 +59,10 @@ const DetailImage = styled.div`
     width: 5rem;
     height: 5rem;
     object-fit: cover;
+    @media (max-width: 1160px) {
+      align-self: self-start;
+      margin-top: 1.3rem;
+    }
   }
 `;
 

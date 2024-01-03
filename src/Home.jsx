@@ -13,15 +13,21 @@ const ImageContainer = styled.div`
   right: 0;
   top: 5.5rem;
   z-index: 1;
-  margin-right: 3rem;
+  object-fit: contain;
   img {
     height: 50%;
+  }
+  @media (max-width: 1160px) {
+    display: none;
   }
 `;
 
 function Home() {
   return (
     <AppContainer>
+      <ImageContainer>
+        <img src="/Presentation1.png" alt="" width={600} height={600} />
+      </ImageContainer>
       <HomePage />
       <ScrollToTopButton />
     </AppContainer>
