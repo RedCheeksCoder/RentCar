@@ -11,10 +11,7 @@ function Logo() {
   return (
     <StyledLogo>
       <a href="/">
-        <img
-          src="/rent-car-automotive-logo-design-template-element-vector-PhotoRoom.png-PhotoRoom.png"
-          alt="Rent car logo"
-        />
+        <img src="/logologo.png" alt="Rent car logo" />
       </a>
     </StyledLogo>
   );
