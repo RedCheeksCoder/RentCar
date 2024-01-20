@@ -30,11 +30,12 @@ const StyledForm = styled.div`
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 2rem 2rem 2rem;
+  margin: 0;
   width: 90%;
 
   @media (max-width: 1515px) {
     justify-content: center;
+    margin-left: 1rem;
   }
 `;
 
@@ -48,6 +49,9 @@ const DetailsContainer = styled.div`
   label {
     font-weight: 600;
     margin-bottom: 1rem;
+    @media (max-width: 800px) {
+      margin: 0.5rem;
+    }
   }
   select,
   input {
@@ -66,6 +70,7 @@ const DetailsContainer = styled.div`
   }
   @media (max-width: 1590px) {
     max-width: 30rem;
+    margin: 0;
   }
 `;
 

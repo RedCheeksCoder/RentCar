@@ -75,7 +75,7 @@ const Heading = styled.h1`
     font-size: 6rem;
   }
   @media (max-width: 1160px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 
@@ -111,7 +111,7 @@ const LearnMore = styled.a`
     transition: all 0.2s;
   }
   @media (max-width: 1160px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;
 
@@ -124,7 +124,7 @@ const CTA = styled.div`
   padding-top: 1rem;
   padding-right: 1rem;
   @media (max-width: 1160px) {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding-top: 0;
     row-gap: 1rem;
     flex-direction: column;
@@ -150,13 +150,16 @@ const BookButton = styled.a`
     transition: all 0.3s;
   }
   @media (max-width: 1160px) {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 `;
 
 const Title = styled.div`
   font-size: 2rem;
   margin-bottom: 2rem;
+  @media (max-width: 1160px) {
+    font-size: 1.3rem;
+  }
 `;
 function Headline() {
   return (

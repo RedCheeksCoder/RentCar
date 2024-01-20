@@ -11,6 +11,9 @@ const StyledSteps = styled.div`
   h3 {
     font-size: 2rem;
     color: #292828;
+    @media (max-width: 1135px) {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -32,16 +35,26 @@ const Stepss = styled.div`
   align-items: center;
   img {
     height: 5rem;
+    @media (max-width: 1135px) {
+      height: 3rem;
+    }
   }
 
   h3 {
     font-size: 1.5rem;
+    @media (max-width: 1135px) {
+      font-size: 1rem;
+    }
   }
   p {
+    width: 100%;
     margin: 0 2rem;
     font-size: 1rem;
     text-align: center;
     color: #808080c8;
+    @media (max-width: 1135px) {
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -61,6 +74,7 @@ const Header = styled.div`
     font-size: 2rem;
     @media (max-width: 1135px) {
       text-align: center;
+      font-size: 1.5rem;
     }
   }
   p {

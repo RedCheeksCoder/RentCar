@@ -89,12 +89,17 @@ const PickTitle = styled.div`
   h1 {
     font-size: 3rem;
     @media (max-width: 500px) {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
   p {
     max-width: 80%;
     color: #808080c8;
+    @media (max-width: 500px) {
+      max-width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+    }
   }
   h3 {
     color: #ff7231;
@@ -118,6 +123,9 @@ const Choices = styled.div`
   font-weight: 500;
   padding: 0.5rem;
   text-align: left;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
   ul {
     padding-inline-start: 0;
   }
@@ -150,7 +158,7 @@ const CarImage = styled.div`
     height: 20rem;
     display: block;
     @media (max-width: 500px) {
-      height: 15rem;
+      height: 12rem;
     }
   }
 `;
@@ -168,6 +176,9 @@ const Details = styled.div`
     text-align: center;
     border-radius: 0;
     font-size: 1.5rem;
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
 `;
 

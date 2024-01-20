@@ -23,12 +23,15 @@ const Hook = styled.div`
     line-height: 1.2;
     margin: 0;
     @media (max-width: 850px) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   p {
     color: #818080ae;
     font-size: 1rem;
+    @media (max-width: 850px) {
+      font-size: 0.7rem;
+    }
   }
 `;
 
@@ -39,6 +42,9 @@ const Details = styled.div`
   p {
     color: #818080ae;
     font-size: 1rem;
+    @media (max-width: 850px) {
+      font-size: 0.7rem;
+    }
   }
 
   @media (max-width: 850px) {
@@ -49,6 +55,11 @@ const Details = styled.div`
 const Detail = styled.div`
   display: flex;
   column-gap: 1rem;
+  h2 {
+    @media (max-width: 1160px) {
+      font-size: 1rem;
+    }
+  }
 `;
 
 const DetailImage = styled.div`
@@ -61,7 +72,9 @@ const DetailImage = styled.div`
     object-fit: cover;
     @media (max-width: 1160px) {
       align-self: self-start;
-      margin-top: 1.3rem;
+      margin-top: 0.8rem;
+      width: 3rem;
+      height: 3rem;
     }
   }
 `;
