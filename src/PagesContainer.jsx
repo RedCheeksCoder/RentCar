@@ -22,13 +22,13 @@ const Title = styled.div`
 
 const HeaderTitle = styled.div`
   margin: 3rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
 `;
 function PagesContainer({ title, content }) {
   return (
     <StyledAbout>
       <Header />
-      <Title></Title>
+      <Title />
       <HeaderTitle>
         <h1>{title}</h1>
       </HeaderTitle>

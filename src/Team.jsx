@@ -7,6 +7,20 @@ const StyledTeam = styled.div`
   margin: 2rem auto;
   column-gap: 1rem;
   width: 84rem;
+
+  @media (max-width: 1600px) {
+    width: 70rem;
+  }
+  @media (max-width: 1300px) {
+    width: 50rem;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+  @media (max-width: 800px) {
+    margin: 0;
+    width: 25rem;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -16,23 +30,35 @@ const ImageContainer = styled.div`
   img {
     width: 100%;
     height: auto;
-    display: block;
+    @media (max-width: 1000px) {
+      width: 20rem;
+      max-width: 100%;
+    }
   }
 `;
 
 const Details = styled.div`
   padding: 2rem;
   width: 200rem;
+  @media (max-width: 1000px) {
+    width: 80%;
+  }
   p {
     color: #818080ae;
     margin: 1rem 0;
     font-size: 1.2rem;
     line-height: 1.7;
+    @media (max-width: 1000px) {
+      font-size: 0.8rem;
+    }
   }
   h1 {
     font-size: 3rem;
     color: #ff7231;
     margin: 0;
+    @media (max-width: 1000px) {
+      font-size: 1.5rem;
+    }
   }
 `;
 

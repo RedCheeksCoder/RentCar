@@ -8,6 +8,9 @@ const StyledHeadline = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  @media (max-width: 1200px) {
+    height: 80dvh;
+  }
 `;
 
 const CarImage = styled.div`
@@ -72,7 +75,7 @@ const Heading = styled.h1`
     font-size: 6rem;
   }
   @media (max-width: 1160px) {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 `;
 
@@ -147,7 +150,7 @@ const BookButton = styled.a`
     transition: all 0.3s;
   }
   @media (max-width: 1160px) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
 

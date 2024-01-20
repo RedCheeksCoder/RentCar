@@ -10,6 +10,7 @@ import Testimonies from "./Testimonies";
 import FAQ from "./FAQ";
 import AppDownload from "./AppDownload";
 import styled from "styled-components";
+import "./styles/sidebar.css";
 
 const Container = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ const Container = styled.div`
 
 function HomePage() {
   return (
-    <Container>
+    <Container id="main">
       <Header />
       <Headline />
       <BookForm />

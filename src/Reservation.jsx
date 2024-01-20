@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import PersonalInfo from "./PersonalInfo";
 import ButtonDesign from "./ButtonDesign";
+import { useState } from "react";
 
 const StyledReservation = styled.div`
   max-height: 90vh;
@@ -122,6 +123,8 @@ function Reservation({
   dropOfTime,
   handleReservation,
 }) {
+  const [details, setDetails] = useState(false);
+  console.log("details:", details);
   return (
     <StyledReservation>
       <Heading>
@@ -254,13 +257,19 @@ function Reservation({
           <img loading="lazy" src={`/bg-removed/${carType}.png`} alt="" />
         </ReservationCarType>
       </ReservationInfo>
-      <PersonalInfo />
+
+      <PersonalInfo setDetails={setDetails} />
+
       <Updates>
         <input type="checkbox" />
         <span>Please send me latest news and updates</span>
       </Updates>
       <ButtonReserve>
-        <ButtonDesign onClick={handleReservation}>Reserve Now</ButtonDesign>
+        <ButtonDesign
+          onClick={handleReservation}
+          disabled={details ? false : true}>
+          Reserve Now
+        </ButtonDesign>
       </ButtonReserve>
     </StyledReservation>
   );

@@ -65,11 +65,20 @@ const cars = [
 ];
 
 const StyledModels = styled.div`
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 2rem;
   padding: 1rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 function ModelsContent() {

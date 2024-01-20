@@ -26,6 +26,7 @@ const List = styled.li`
     display: none;
   }
 `;
+
 function NavBar() {
   return (
     <div>

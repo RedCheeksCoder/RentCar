@@ -14,6 +14,10 @@ const Heading = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
+  @media (max-width: 850px) {
+    padding: 0;
+    width: 100%;
+  }
   h1 {
     font-size: 3rem;
     margin: 0;

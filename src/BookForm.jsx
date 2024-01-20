@@ -4,7 +4,8 @@ import { FaCarSide, FaRegCalendarAlt } from "react-icons/fa";
 import { ModalProvider } from "styled-react-modal";
 import FancyModalButton, { FadingBackground } from "./Modal";
 import Reservation from "./Reservation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 const StyledBookForm = styled.section`
   box-shadow: -5px 1px 54px 1px rgba(179, 169, 169, 0.3);
@@ -76,8 +77,22 @@ function BookForm() {
   const [dropOfTime, setDropOfTime] = useState("");
   const [pickUpTime, setPickUpTime] = useState("");
 
+  const [completeDetails, setCompleteDetails] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [opacity, setOpacity] = useState(0);
+
+  useEffect(() => {
+    const details = !!(
+      carType &&
+      pickUpLoc &&
+      dropOfLoc &&
+      dropOfTime &&
+      pickUpTime
+    );
+    setCompleteDetails(details);
+    console.log(completeDetails);
+  }, [carType, pickUpLoc, dropOfLoc, dropOfTime, pickUpTime, completeDetails]);
+
   /* Handler Functions */
   function handleCarType(e) {
     e.preventDefault();
@@ -100,6 +115,9 @@ function BookForm() {
     setDropOfTime(e.target.value);
   }
   function handleReservation(e) {
+    toast.success(
+      "Successful reservation!. Please check your email for confirmation."
+    );
     e.preventDefault();
     setCarType("");
     setPickUpLoc("");
@@ -179,17 +197,29 @@ function BookForm() {
             <FaRegCalendarAlt />
             Pick-up<b>*</b>
           </label>
-          <input value={pickUpTime} onChange={handlePickUpTime} type="date" />
+          <input
+            value={pickUpTime}
+            onChange={handlePickUpTime}
+            type="date"
+            required
+          />
         </DetailsContainer>
         <DetailsContainer>
           <label>
             <FaRegCalendarAlt />
             Drop-of<b>*</b>
           </label>
-          <input value={dropOfTime} onChange={handleDropOfTime} type="date" />
+          <input
+            value={dropOfTime}
+            onChange={handleDropOfTime}
+            type="date"
+            required
+          />
         </DetailsContainer>
+        {}
         <ModalProvider backgroundComponent={FadingBackground}>
           <FancyModalButton
+            completeDetails={completeDetails}
             toggleModal={toggleModal}
             afterOpen={afterOpen}
             beforeClose={beforeClose}

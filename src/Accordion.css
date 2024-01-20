@@ -2,6 +2,9 @@
   border-radius: 2px;
   min-width: 50%;
   max-width: 70%;
+  @media (max-width: 830px) {
+    min-width: 100%;
+  }
 }
 
 .accordion__item + .accordion__item {
@@ -15,7 +18,7 @@
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 97%;
+  width: 100%;
   text-align: left;
   border: none;
   font-size: 1.5rem;
@@ -29,7 +32,7 @@
   @media (max-width: 500px) {
     font-size: 1rem;
     font-weight: 500;
-    width: 88%;
+    width: 92%;
   }
 }
 
@@ -73,7 +76,7 @@
   }
   @media (max-width: 500px) {
     font-size: 1rem;
-    width: 17.6rem;
+    width: 92%;
   }
 }
 

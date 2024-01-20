@@ -14,6 +14,7 @@ const ImageContainer = styled.div`
   top: 5.5rem;
   z-index: 1;
   object-fit: contain;
+
   img {
     height: 50%;
   }

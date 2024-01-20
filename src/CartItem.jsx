@@ -3,8 +3,13 @@ import ButtonDesign from "./ButtonDesign";
 
 const CarItemDesign = styled.div`
   height: auto;
+  width: auto;
   padding: 2rem;
   border: 1px solid #d5d5d5;
+
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -48,7 +53,7 @@ function CartItem({ car }) {
   return (
     <CarItemDesign>
       <ImageContainer>
-        <img loading="lazy"  src={car.image} alt="" />
+        <img loading="lazy" src={car.image} alt="" />
       </ImageContainer>
       <div>
         <Heading>

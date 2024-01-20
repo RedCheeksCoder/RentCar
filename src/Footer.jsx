@@ -1,3 +1,5 @@
+import { useState } from "react";
+import toast from "react-hot-toast";
 import styled from "styled-components";
 
 const StyledFooter = styled.div`
@@ -8,6 +10,7 @@ const StyledFooter = styled.div`
   margin: 1rem 1rem 3rem 1rem;
   max-width: 100%;
   border-top: 1px;
+  border-bottom: 5rem;
 
   @media (max-width: 1100px) {
     grid-template-columns: 1fr 1fr;
@@ -111,6 +114,18 @@ const SubscribeButton = styled.div`
 `;
 
 function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleClick = () => {
+    email
+      ? toast.success("Successful subscription!")
+      : toast.error("Please input your email.");
+    setEmail("");
+  };
   return (
     <>
       <StyledFooter>
@@ -142,8 +157,13 @@ function Footer() {
         <Container>
           <h1>NEWS LETTER</h1>
           <p>Subscribe to our news letter for promos and updates</p>
-          <input type="text" placeholder="Email Address" />
-          <SubscribeButton>SUBSCRIBE</SubscribeButton>
+          <input
+            type="text"
+            placeholder="Email Address"
+            value={email}
+            onChange={handleEmail}
+          />
+          <SubscribeButton onClick={handleClick}>SUBSCRIBE</SubscribeButton>
         </Container>
       </StyledFooter>
     </>

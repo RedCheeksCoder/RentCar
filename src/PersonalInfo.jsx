@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Info from "./Info";
-import { useState } from "react";
 
 const StyledPersonalInfo = styled.div`
   display: flex;
@@ -16,18 +15,13 @@ const Label = styled.h2`
 
 function PersonalInfo() {
   /* Personal information form */
-  /* const [firstname, setFirstname] = useState("");
+  /*  const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [number, setNumber] = useState("");
   const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  function handleFirstname() {}
-  function handleLastname() {}
-  function handleNumber() {}
-  function handleAge() {}
-  function handleEmail() {}
-  function handleAddress() {} */
+  const [address, setAddress] = useState(""); */
+
   return (
     <>
       <Label>PERSONAL INFORMATION</Label>

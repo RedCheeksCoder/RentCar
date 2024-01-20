@@ -5,6 +5,12 @@ const StyledInformation = styled.div`
   justify-content: space-between;
   column-gap: 5rem;
   margin-top: 5rem;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 0;
+    row-gap: 2rem;
+    padding-bottom: 1rem;
+  }
   b {
     color: #ff7231;
   }
@@ -43,14 +49,30 @@ const Details = styled.div`
   font-size: 1.5rem;
   margin: 0 2rem;
   width: 70%;
-
+  @media (max-width: 800px) {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
   p {
     color: #818080ae;
     font-size: 1.2rem;
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
   }
   h4,
   h1 {
     margin: 0.3rem;
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
+  }
+
+  h4 {
+    @media (max-width: 800px) {
+      font-size: 1rem;
+    }
   }
 `;
 function Information() {

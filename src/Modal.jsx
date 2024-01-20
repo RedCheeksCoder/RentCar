@@ -24,7 +24,7 @@ const ButtonContainer = styled.div`
   margin-left: 1rem;
 `;
 
-const Button = styled.div`
+const Button = styled.button`
   background-color: #ff7231;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   border-radius: 7px;
@@ -52,10 +52,14 @@ function FancyModalButton({
   beforeClose,
   isOpen,
   opacity,
+  completeDetails,
 }) {
   return (
     <ButtonContainer>
-      <Button onClick={toggleModal}>Search</Button>
+      <Button onClick={toggleModal} disabled={completeDetails ? false : true}>
+        Search
+      </Button>
+
       <StyledModal
         isOpen={isOpen}
         afterOpen={afterOpen}
