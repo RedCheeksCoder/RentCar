@@ -26,6 +26,7 @@ const StyledTeam = styled.div`
 const ImageContainer = styled.div`
   max-width: 100%;
   overflow: hidden;
+  margin-top: 2rem;
 
   img {
     width: 100%;

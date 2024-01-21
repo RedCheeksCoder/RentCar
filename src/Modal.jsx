@@ -21,7 +21,6 @@ const ButtonContainer = styled.div`
   min-width: 20%;
   max-width: 100%;
   font-family: "Poppins";
-  margin-left: 1rem;
 `;
 
 const Button = styled.button`
@@ -42,6 +41,8 @@ const Button = styled.button`
 
   @media (max-width: 1000px) {
     margin-left: 0;
+    width: 30rem;
+    border: none;
   }
 `;
 

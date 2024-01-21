@@ -9,7 +9,7 @@ const StyledHeadline = styled.div`
   align-items: center;
   padding: 1rem;
   @media (max-width: 1200px) {
-    height: 80dvh;
+    height: 90dvh;
   }
 `;
 

@@ -51,6 +51,7 @@ const DetailsContainer = styled.div`
     margin-bottom: 1rem;
     @media (max-width: 800px) {
       margin: 0.5rem;
+      font-size: 0.8rem;
     }
   }
   select,
@@ -64,6 +65,9 @@ const DetailsContainer = styled.div`
     outline: none;
     width: 100%;
     padding: 1rem;
+    @media (max-width: 800px) {
+      font-size: 0.8rem;
+    }
   }
   b {
     color: #ff4d30;

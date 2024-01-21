@@ -22,7 +22,7 @@ const Title = styled.div`
 
 const HeaderTitle = styled.div`
   margin: 3rem 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 `;
 function PagesContainer({ title, content }) {
   return (
