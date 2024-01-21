@@ -12,7 +12,7 @@ const StyledBookForm = styled.section`
   -webkit-box-shadow: -5px 1px 54px 1px rgba(179, 169, 169, 0.3);
   -moz-box-shadow: -5px 1px 54px 1px rgba(179, 169, 169, 0.3);
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 100%;

@@ -15,7 +15,7 @@ const StyledAbout = styled.div`
   }
 `;
 const Title = styled.div`
-  height: 40dvh;
+  height: 30dvh;
   width: 100%;
   position: absolute;
   top: 0;

@@ -35,14 +35,16 @@ const Button = styled.button`
   font-weight: bold;
   padding: 1rem;
   text-decoration: none;
-  width: 20rem;
+  width: 22rem;
   text-align: center;
   align-self: self-end;
+  margin-left: 1rem;
 
   @media (max-width: 1000px) {
     margin-left: 0;
     width: 30rem;
     border: none;
+    outline: none;
   }
 `;
 
