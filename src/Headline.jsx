@@ -9,7 +9,7 @@ const StyledHeadline = styled.div`
   align-items: center;
   padding: 1rem;
   @media (max-width: 1200px) {
-    height: 70dvh;
+    height: 80dvh;
   }
 `;
 
@@ -92,6 +92,7 @@ const Hook = styled.p`
 `;
 
 const LearnMore = styled.a`
+  box-sizing: border-box;
   background-color: #000000;
   border-radius: 3px;
   display: inline-block;
@@ -117,12 +118,11 @@ const LearnMore = styled.a`
 
 const CTA = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   column-gap: 1rem;
   margin-top: 2rem;
   padding-top: 1rem;
-  padding-right: 1rem;
   @media (max-width: 1160px) {
     margin-top: 0.5rem;
     padding-top: 0;
@@ -132,6 +132,7 @@ const CTA = styled.div`
 `;
 
 const BookButton = styled.a`
+  box-sizing: border-box;
   background-color: #ff7231;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
   border-radius: 3px;

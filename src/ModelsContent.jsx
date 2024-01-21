@@ -66,7 +66,7 @@ const cars = [
 
 const StyledModels = styled.div`
   height: 100%;
-  width: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
