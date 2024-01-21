@@ -9,6 +9,10 @@ const StyledAbout = styled.div`
   flex-direction: column;
   align-items: center;
   width: 70%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 const Title = styled.div`
   height: 40dvh;

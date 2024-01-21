@@ -20,6 +20,9 @@ const StyledBookForm = styled.section`
   border-radius: 9px;
   h3 {
     margin-left: 3rem;
+    @media (max-width: 800px) {
+      margin-left: 1rem;
+    }
   }
 `;
 
