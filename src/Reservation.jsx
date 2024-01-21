@@ -10,6 +10,12 @@ const StyledReservation = styled.div`
   overflow-x: hidden;
   overflow-y: scroll;
   padding-bottom: 10rem;
+  @media (max-width: 1250px) {
+    width: 70vw;
+  }
+  @media (max-width: 800px) {
+    width: 90vw;
+  }
 `;
 
 const ButtonReserve = styled.div`
@@ -20,6 +26,9 @@ const ButtonReserve = styled.div`
   justify-content: center;
   align-items: flex-end;
   padding-right: 4rem;
+  @media (max-width: 700px) {
+    padding-right: 2rem;
+  }
 `;
 
 const Heading = styled.div`
@@ -35,6 +44,9 @@ const HeaderTitle = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
   padding: 0.5rem 0 0.5rem 1rem;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 `;
 
 const HeaderContent = styled.div`
@@ -43,11 +55,17 @@ const HeaderContent = styled.div`
   padding: 0 1rem;
   h2 {
     font-size: 1rem;
+    @media (max-width: 500px) {
+      font-size: 0.7rem;
+    }
   }
   p {
     color: #808080c8;
     font-size: 0.8rem;
     font-weight: 500;
+    @media (max-width: 500px) {
+      font-size: 0.5rem;
+    }
   }
 `;
 const ReservationInfo = styled.div`
@@ -55,6 +73,10 @@ const ReservationInfo = styled.div`
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
+  @media (max-width: 700px) {
+    row-gap: 1rem;
+    flex-direction: column;
+  }
 `;
 
 const ReservationInput = styled.div`
@@ -63,6 +85,9 @@ const ReservationInput = styled.div`
   padding-left: 1rem;
   h2 {
     color: #ff7231;
+    @media (max-width: 700px) {
+      font-size: 1rem;
+    }
   }
 `;
 
@@ -88,6 +113,9 @@ const LocationAndDate = styled.div`
   display: flex;
   align-items: center;
   margin: 0.7rem;
+  @media (max-width: 700px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const Info = styled.div`
@@ -96,7 +124,6 @@ const Info = styled.div`
     color: #808080c8;
   }
   input {
-    font-size: 1rem;
     color: #808080c8;
   }
 `;
@@ -114,6 +141,9 @@ const Updates = styled.div`
   padding-left: 2rem;
   padding-top: 2rem;
   font-size: 1.2rem;
+  @media (max-width: 700px) {
+    font-size: 0.8rem;
+  }
 `;
 function Reservation({
   carType,

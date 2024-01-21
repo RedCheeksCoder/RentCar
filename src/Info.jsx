@@ -8,6 +8,9 @@ const Inputs = styled.div`
     font-weight: 400;
     margin: 0;
     color: #777;
+    @media (max-width: 700px) {
+      font-size: 0.8rem;
+    }
   }
   input {
     min-width: 18rem;
@@ -17,6 +20,9 @@ const Inputs = styled.div`
     width: 40%;
     border: none;
     outline: none;
+    @media (max-width: 700px) {
+      font-size: 0.8rem;
+    }
   }
   b {
     color: red;

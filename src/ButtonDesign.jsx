@@ -16,6 +16,9 @@ const BookRide = styled.a`
     background-color: #ff7231c5;
     transition: all 0.3s;
   }
+  @media (max-width: 700px) {
+    font-size: 0.8rem;
+  }
 `;
 function ButtonDesign({ children, onClick }) {
   return <BookRide onClick={onClick}>{children}</BookRide>;
