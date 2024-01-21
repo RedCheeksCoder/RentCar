@@ -26,3 +26,6 @@ Features
 
 To run
 - npm run dev
+
+Demo:
+https://youtu.be/4HklTLObGPI?si=i13PnnMnTErxrrze
